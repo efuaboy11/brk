@@ -111,7 +111,7 @@ export const Login = () =>{
               />
               {errors.email && <span className="error-text">Email is required</span>}
 
-              <label className="form-label auth-text mt-3">Password</label>
+              <label className="form-label auth-text mt-3">Passwords</label>
               <div className="password-wrapper">
                 <input
                   type={showPassword ? "text" : "password"}
