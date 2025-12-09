@@ -1,0 +1,476 @@
+/* General styling for all inputs */
+.styled-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus state for inputs */
+.styled-input:focus {
+  outline: none;
+  border-color: #2c1842; /* Change this color if you want a different focus effect */
+}
+/* Styling for form labels */
+.form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 14px;
+}
+
+/* Password container styles */
+.password-container {
+  position: relative;
+}
+
+/* Ensure password input has full width but leaves space for the icon */
+.password-input {
+  padding-right: 40px; /* Leave room for the icon */
+}
+
+/* Password icon styling */
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Add hover effect to the icon */
+.password-icon:hover {
+  color: var(--primary-color);
+}
+
+
+
+/* Styling for the button */
+.sign-up-btn {
+  background-color: #3B1E54; 
+  color: #fff; 
+  padding: 12px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+  width: 100%;
+}
+
+/* === BACKGROUND === */
+
+/* === BACKGROUND === */
+.auth-bg {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0a0e29, #000420, #051529);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* === CARD WRAPPER === */
+.auth-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 0;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+/* === LEFT IMAGE SIDE === */
+.auth-left {
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-illustration {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* === RIGHT FORM SIDE === */
+.auth-right {
+  padding: 45px;
+}
+
+.auth-title {
+  color: #fff;             /* Secondary brand color */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.auth-subtitle {
+  color: #d5d8e2;              /* Light text */
+  font-size: 14px;
+}
+
+/* === INPUTS === */
+.styled-input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.07);
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.styled-input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.styled-input:focus {
+  border-color: #50fa7b;                     /* brand secondary */
+  box-shadow: 0 0 6px rgba(80, 250, 123, 0.4);
+}
+
+.input-error {
+  border-color: #e63946 !important;
+}
+
+/* === PASSWORD FIELD === */
+.password-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;               /* brand secondary */
+}
+
+
+/* ============================
+   OTP FIELD WRAPPER
+   ============================ */
+
+.otp-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Container styling */
+.styled-input.otp-wrapper {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding-left: 42px;  /* space for icon */
+  height: 48px;
+  transition: all 0.2s ease;
+}
+
+/* Focus effect */
+.styled-input.otp-wrapper:focus-within {
+  border-color: #50fa7b;                     /* brand secondary */
+  box-shadow: 0 0 6px rgba(80, 250, 123, 0.4);
+}
+
+/* ============================
+   ICON INSIDE OTP FIELD
+   ============================ */
+
+.otp-icon {
+  position: absolute;
+  left: 12px;
+  font-size: 16px;
+  color: #777;
+  pointer-events: none;
+}
+
+/* ============================
+   OTP INPUT TEXTBOX
+   ============================ */
+
+.otp-input-field {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 100%;
+  padding: 0 14px 0 0;
+  font-size: 15px;
+  background: transparent;
+  color: #333;
+}
+
+.otp-input-field::placeholder {
+  color: #aaa;
+}
+
+/* ============================
+   ERROR STATE
+   ============================ */
+.input-error {
+  border-color: #e63946 !important;
+  box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.2);
+}
+
+.input-error::placeholder {
+  color: #e63946 !important;
+}
+
+
+/* === BUTTON === */
+.auth-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #50fa7b, #32d76b);
+  border: none;
+  border-radius: 10px;
+  color: #000420;               /* dark brand color */
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+.btn-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* === LINKS === */
+.auth-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-text{
+  color: #fff;
+}
+
+.auth-links a {
+  color: #50fa7b;
+  text-decoration: none;
+}
+
+.auth-links a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+/* === ERROR TEXT === */
+.error-text {
+  color: #e63946;
+  font-size: 13px;
+}
+
+.error-box {
+  background: rgba(230,57,70,0.12);
+  padding: 12px;
+  border-left: 3px solid #e63946;
+  border-radius: 6px;
+  color: #fff;
+}
+
+
+/* Button hover effect */
+.sign-up-btn:hover {
+  background-color: #542a76;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Button focus state */
+.sign-up-btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(59, 30, 84, 0.4); 
+}
+
+/* Button active state */
+.sign-up-btn:active {
+  background-color: #2c1842; 
+  box-shadow: none; 
+}
+
+.sign-up-texts{
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+
+
+.sign-up-bg{
+  background: rgba(15, 15, 15, 0.75);
+  height: 100vh;
+  position: relative;
+  /* color: white; */
+  width: 100%;
+}
+
+
+.sign-up-bg::before{
+  content: "";
+  background: url(../../img/sign-up-bg.jpg)no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Register animation for the moving line */
+.sign-up-animation {
+  border-top: 3px solid #ff5733; /* Initial color */
+  width: 400px;
+  margin-left: 30px;
+  position: relative;
+  animation: moveLine 2s infinite ease-in-out, changeColor 4s infinite linear;
+}
+
+/* Horizontal movement of the line */
+@keyframes moveLine {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(60% - 20px); /* Moves to the right side */
+  }
+  100% {
+    left: 0; /* Returns back to the left */
+  }
+}
+
+/* Color changing animation */
+@keyframes changeColor {
+  0% {
+    border-color: #ff5733; /* Bright red-orange */
+  }
+  25% {
+    border-color: #33b5ff; /* Bright sky blue */
+  }
+  50% {
+    border-color: #33ff57; /* Bright green */
+  }
+  75% {
+    border-color: #ff33bb; /* Bright pink */
+  }
+  100% {
+    border-color: #ff5733; /* Returns to initial red-orange */
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px){
+    @keyframes moveLine {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: calc(70% - 20px); /* Moves to the right side */
+      }
+      100% {
+        left: 0; /* Returns back to the left */
+      }
+    }
+    .sign-up-animation {
+      width: 200px;
+    
+    }
+  
+  
+  }
+  
+  @media (max-width: 700px){
+    @keyframes moveLine {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: calc(55% - 20px); /* Moves to the right side */
+      }
+      100% {
+        left: 0; /* Returns back to the left */
+      }
+    }
+    .sign-up-animation {
+      width: 200px;
+    
+    }
+  
+  
+  }
+
+
+
+@media (max-width: 460px){
+    @keyframes moveLine {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: calc(70% - 20px); /* Moves to the right side */
+      }
+      100% {
+        left: 0; /* Returns back to the left */
+      }
+    }
+    .sign-up-animation {
+      width: 100px;
+    
+    }
+  
+  
+  }
+  
+  @media (max-width: 350px){
+    @keyframes moveLine {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: calc(50% - 20px); /* Moves to the right side */
+      }
+      100% {
+        left: 0; /* Returns back to the left */
+      }
+    }
+    .sign-up-animation {
+      width: 100px;
+    
+    }
+  
+  
+  }
