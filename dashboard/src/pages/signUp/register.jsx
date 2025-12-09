@@ -233,7 +233,7 @@ export const Register = () => {
                 {/* CAPTCHA */}
                 <div className="mt-3">
                   <ReCAPTCHA
-                    sitekey="6LdiNSYsAAAAAAjv_n96Tei5wPwZzst-OQ2J9Jbe-"
+                    sitekey="6LdiNSYsAAAAAAjv_n96Tei5wPwZzst-OQ2J9Jbe"
                     onChange={onCaptchaChange}
                   />
                 </div>

@@ -111,7 +111,7 @@ export const Login = () =>{
               />
               {errors.email && <span className="error-text">Email is required</span>}
 
-              <label className="form-label auth-text mt-3">Passwords</label>
+              <label className="form-label auth-text mt-3">Password</label>
               <div className="password-wrapper">
                 <input
                   type={showPassword ? "text" : "password"}
@@ -128,7 +128,7 @@ export const Login = () =>{
               {errors.password && <span className="error-text">Password is required</span>}
 
               <div className="mt-3">
-                <ReCAPTCHA sitekey="6LdiNSYsAAAAAAjv_n96Tei5wPwZzst-OQ2J9Jbe-" onChange={onCaptchaChange} />
+                <ReCAPTCHA sitekey="6LdiNSYsAAAAAAjv_n96Tei5wPwZzst-OQ2J9Jbe" onChange={onCaptchaChange} />
               </div>
 
               <button
