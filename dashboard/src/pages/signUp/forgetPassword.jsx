@@ -105,7 +105,7 @@ export const ForgotPasssword = () => {
 
                 <div className="mt-3">
                   <ReCAPTCHA 
-                    sitekey="6LeGOSYsAAAAACdTGTa4mO6KH6MdoTy7bsUREsRt" 
+                    sitekey="6LcXPSYsAAAAACi4E4JmgDhbJD56txhT_QJFzMDD" 
                     onChange={onCaptchaChange}
                   />
                 </div>
