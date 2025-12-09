@@ -128,7 +128,7 @@ export const Login = () =>{
               {errors.password && <span className="error-text">Password is required</span>}
 
               <div className="mt-3">
-                <ReCAPTCHA sitekey="6LcXPSYsAAAAACi4E4JmgDhbJD56txhT_QJFzMDD" onChange={onCaptchaChange} />
+                <ReCAPTCHA sitekey="6LcfQSYsAAAAAP1oegAzCBYDTqROOIIoyotyHpyQ" onChange={onCaptchaChange} />
               </div>
 
               <button
