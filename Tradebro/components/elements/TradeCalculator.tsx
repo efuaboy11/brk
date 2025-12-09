@@ -10,6 +10,7 @@ export default function TradingCalculator() {
   const [tradeSize, setTradeSize] = useState(10000);
   const [leverage, setLeverage] = useState(10);
   const [result, setResult] = useState<number | null>(null);
+  
 
   const categoryOptions = [
     { value: 'forex', label: 'Forex' },
