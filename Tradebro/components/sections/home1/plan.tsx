@@ -198,7 +198,7 @@ export default function Plan() {
 
                               <div className='pt-4 pb-2 my-5'>
 
-                                <Link href={`'/register'}`} className="site-btn width-100 text-center">Start Trading Now</Link>
+                                <Link target="_blank" href="https://portal.veloxarion.com/dashboard/home" className="site-btn width-100 text-center">Start Trading Now</Link>
                               </div>
                             </div>
 

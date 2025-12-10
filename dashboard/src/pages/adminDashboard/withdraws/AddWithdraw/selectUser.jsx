@@ -48,7 +48,7 @@ export const SelectUserWithdraw = () =>{
   }, [])
   
   const onSubmit = () =>{
-    sessionStorage.setItem("userID", user)
+    localStorage.setItem("userID", user)
     navigate('/admin/withdraw/payment-options')
     
   }

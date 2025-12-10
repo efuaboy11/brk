@@ -62,7 +62,7 @@ export const ClientInvestmentAddAmount = () =>{
   const onSubmit = (data, e) =>{
     setDisablebutton(true)
     if(isValid){
-      sessionStorage.setItem('amount', amount)
+      localStorage.setItem('amount', amount)
       setLoader(true)
       const timer = setTimeout(() => {
         if(roundUp(amount) <= roundUp(userProfile.user_balance.balance)){
@@ -103,7 +103,7 @@ export const ClientInvestmentAddAmount = () =>{
 
   const IndvividualPlan = async(id) =>{
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/investment-plan/${sessionStorage.getItem('dataID')}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/investment-plan/${localStorage.getItem('dataID')}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -115,7 +115,7 @@ export const ClientInvestmentAddAmount = () =>{
 
     if (response.ok){
       setData(data)
-      sessionStorage.setItem('IndividualData', JSON.stringify(data))
+      localStorage.setItem('IndividualData', JSON.stringify(data))
       setDisablebutton(false)
 
     }else{
@@ -125,7 +125,7 @@ export const ClientInvestmentAddAmount = () =>{
   }
 
   useEffect(() =>{
-    sessionStorage.getItem('dataID')
+    localStorage.getItem('dataID')
     IndvividualPlan()
   }, [])
 

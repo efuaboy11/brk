@@ -61,7 +61,7 @@ export default function Courses_Page() {
                                             </div>
                                             <div className="text">
                                                 <p>Answers to 100+ Questions.</p>
-                                                <Link href="#">
+                                                <Link href="/faq">
                                                     Explore Faq’s
                                                     <i className="icon-right-arrow"></i>
                                                 </Link>

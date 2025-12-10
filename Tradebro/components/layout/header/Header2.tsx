@@ -87,7 +87,7 @@ export default function Header2({ scroll, handleMobileMenu, handlePopup }: Heade
                         <div className="main-header-style2__content-bottom-left">
                             <div className="header-logo-box-style2">
                                 <Link href="/index-2">
-                                    <Image src="/assets/images/resources/logo-2.png" alt="Awesome Logo" width={189} height={27} priority />
+                                    <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={189} height={27} priority />
                                 </Link>
                             </div>
 
@@ -97,7 +97,7 @@ export default function Header2({ scroll, handleMobileMenu, handlePopup }: Heade
                                     <div className="main-menu__wrapper-inner">
                                         <div className="sticky-logo-box-style1">
                                             <Link href="/index-2">
-                                                <Image src="/assets/images/resources/logo-1.png" alt="Awesome Logo" width={189} height={27} priority />
+                                                <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={189} height={27} priority />
                                             </Link>
                                         </div>
                                         <div className="main-menu-style1__left">
@@ -152,7 +152,7 @@ export default function Header2({ scroll, handleMobileMenu, handlePopup }: Heade
                     <div className="main-menu__wrapper-inner">
                         <div className="sticky-logo-box-style1">
                             <Link href="/">
-                                <Image src="/assets/images/resources/logo-1.png" alt="Awesome Logo" width={189} height={27} priority />
+                                <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={189} height={27} priority />
                             </Link>
                         </div>
                         <div className="main-menu-style1__left">

@@ -28,10 +28,10 @@ export const IndividualDeposit = () =>{
   const [typeOfDepositUrl, setTypeOfDepositUrl] = useState('')
 
   useEffect(() =>{
-    const data = sessionStorage.getItem("IndividualDepsoit")
+    const data = localStorage.getItem("IndividualDepsoit")
 
-    setTypeOfDeposit(sessionStorage.getItem('TypeOfDeposit'))
-    setTypeOfDepositUrl(sessionStorage.getItem('TypeOfDepositUrl'))
+    setTypeOfDeposit(localStorage.getItem('TypeOfDeposit'))
+    setTypeOfDepositUrl(localStorage.getItem('TypeOfDepositUrl'))
     if(data){
       const parsedData = JSON.parse(data)
       setDetails(parsedData)

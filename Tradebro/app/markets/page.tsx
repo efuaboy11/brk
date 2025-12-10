@@ -278,7 +278,7 @@ export default function Markets_Page() {
                                 </p>
                             </div>
                             <div className="btn-box">
-                                <Link className="btn-one" href="/accounts">
+                                <Link className="btn-one" target="_blank" href="https://portal.veloxarion.com/dashboard/home">
                                     <span className="txt">Start Trading</span>
                                     <i className="icon-right-arrow"></i>
                                 </Link>

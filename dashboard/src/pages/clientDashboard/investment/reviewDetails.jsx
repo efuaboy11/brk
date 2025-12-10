@@ -74,9 +74,9 @@ export const ClientInvestmentReviewDetails = () =>{
 
 
   useEffect(() =>{
-    const data = sessionStorage.getItem('IndividualData')
-    setInvestPlan(sessionStorage.getItem('dataID'))
-    setAmount(sessionStorage.getItem('amount'))
+    const data = localStorage.getItem('IndividualData')
+    setInvestPlan(localStorage.getItem('dataID'))
+    setAmount(localStorage.getItem('amount'))
     if(data){
       const parsedData = JSON.parse(data)
       setDetails(parsedData)

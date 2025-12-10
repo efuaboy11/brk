@@ -24,7 +24,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }: Heade
                         <div className="main-header-style1__content-top-left">
                             <div className="header-logo-box-style1">
                                 <Link href="/">
-                                    <Image src="/assets/images/resources/logo-1.png" alt="Awesome Logo" width={189} height={27} priority />
+                                    <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={50} height={50} priority />
                                 </Link>
                             </div>
                             <div className="header-trading-time-style1">
@@ -96,7 +96,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }: Heade
                                                 <Image src="/assets/images/icon/icon-login.png" alt="Icon" width={26} height={26} priority />
                                             </div>
                                             <div className="text1">
-                                                <h4><Link href="#">Login</Link></h4>
+                                                <h4><Link target="_blank" href="https://portal.veloxarion.com/login">Login</Link></h4>
                                                 <p>Enter to Trade</p>
                                             </div>
                                         </li>
@@ -105,7 +105,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }: Heade
                                                 <Image src="/assets/images/icon/icon-register.png" alt="Icon" width={26} height={26} priority />
                                             </div>
                                             <div className="text1">
-                                                <h4><Link href="#">Register</Link></h4>
+                                                <h4><Link target="_blank" href="https://portal.veloxarion.com">Register</Link></h4>
                                                 <p>Start Your Journey</p>
                                             </div>
                                         </li>
@@ -114,8 +114,8 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }: Heade
                                                 <Image src="/assets/images/icon/icon-logout.png" alt="Icon" width={26} height={26} priority />
                                             </div>
                                             <div className="text1">
-                                                <h4><Link href="#">Logout</Link></h4>
-                                                <p>Goodbye, See You</p>
+                                                <h4><Link target="_blank" href="https://portal.veloxarion.com/dashboard/home">Dashboard</Link></h4>
+                                                <p>Start Trade</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -132,34 +132,18 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }: Heade
                                                 <Image src="/assets/images/icon/icon-faq.png" alt="Icon" width={26} height={26} priority />
                                             </div>
                                             <div className="text1">
-                                                <h4><Link href="#">Faq&apos;s</Link></h4>
+                                                <h4><Link href="/faq">Faq&apos;s</Link></h4>
                                                 <p>Get 100+ answers.</p>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div className="icon1">
-                                                <Image src="/assets/images/icon/icon-live-chat.png" alt="Icon" width={26} height={26} priority />
-                                            </div>
-                                            <div className="text1">
-                                                <h4><Link href="#">Live Chat</Link></h4>
-                                                <p>Anytime, Anywhere.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="icon1">
-                                                <Image src="/assets/images/icon/icon-community-forums.png" alt="Icon" width={26} height={23} priority />
-                                            </div>
-                                            <div className="text1">
-                                                <h4><Link href="#">Community Forums</Link></h4>
-                                                <p>Unite & Discuss.</p>
-                                            </div>
-                                        </li>
+                                        
+                                        
                                         <li>
                                             <div className="icon1">
                                                 <Image src="/assets/images/icon/icon-tutorials.png" alt="Icon" width={26} height={26} priority />
                                             </div>
                                             <div className="text1">
-                                                <h4><Link href="#">Tutorials</Link></h4>
+                                                <h4><Link href="/courses">Tutorials</Link></h4>
                                                 <p>Skill Up Now.</p>
                                             </div>
                                         </li>
@@ -180,7 +164,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }: Heade
                                     <div className="main-menu__wrapper-inner">
                                         <div className="sticky-logo-box-style1">
                                             <Link href="/">
-                                                <Image src="/assets/images/resources/logo-1.png" alt="Awesome Logo" width={189} height={27} priority />
+                                                <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={50} height={50} priority />
                                             </Link>
                                         </div>
                                         <div className="main-menu-style1__left">
@@ -211,7 +195,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }: Heade
                                     <i className="icon-candle"></i>
                                 </div>
                                 <div className="text">
-                                    <Link href="#">
+                                    <Link target="_blank" href="https://portal.veloxarion.com/dashboard/home">
                                         Start <br />Trading
                                         <i className="icon-right-arrow"></i>
                                     </Link>
@@ -236,7 +220,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }: Heade
                     <div className="main-menu__wrapper-inner">
                         <div className="sticky-logo-box-style1">
                             <Link href="/">
-                                <Image src="/assets/images/resources/logo-1.png" alt="Awesome Logo" width={189} height={27} priority />
+                                <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={50} height={50} priority />
                             </Link>
                         </div>
                         <div className="main-menu-style1__left">

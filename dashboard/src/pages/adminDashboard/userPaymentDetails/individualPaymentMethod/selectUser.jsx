@@ -48,7 +48,7 @@ export const SelectUser = () =>{
   }, [])
   
   const onSubmit = () =>{
-    sessionStorage.setItem("userID", user)
+    localStorage.setItem("userID", user)
     navigate('/admin/individual-payment-method/payment-option/')
     
   }

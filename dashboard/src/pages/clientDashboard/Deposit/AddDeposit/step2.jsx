@@ -81,8 +81,8 @@ export const AddDeposit2 = () =>{
   }, [loader]);
 
   useEffect(() =>{
-    const data = sessionStorage.getItem('paymentMethod')
-    setAmount(sessionStorage.getItem('despositAmount'))
+    const data = localStorage.getItem('paymentMethod')
+    setAmount(localStorage.getItem('despositAmount'))
     if(data){
       const parsedData = JSON.parse(data)
       setDetails(parsedData)

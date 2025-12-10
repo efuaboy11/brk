@@ -87,11 +87,11 @@ export const AllInvestment = () =>{
     if(response.ok){
       const data = await response.json()
       const sortedData = data.sort((a, b) => b.id - a.id);
-      sessionStorage.setItem('InvestmentInterestData', JSON.stringify(sortedData))
+      localStorage.setItem('InvestmentInterestData', JSON.stringify(sortedData))
       console.log(data)
 
     }else{
-      sessionStorage.setItem('InvestmentInterestData', null)
+      localStorage.setItem('InvestmentInterestData', null)
 
     }
 
@@ -112,9 +112,9 @@ export const AllInvestment = () =>{
       
     })
     const data = await response.json()
-    sessionStorage.setItem('urlName', 'All')
-    sessionStorage.setItem('urlLink', '/admin/all-investment')
-    sessionStorage.setItem('IndividualData', JSON.stringify(data))
+    localStorage.setItem('urlName', 'All')
+    localStorage.setItem('urlLink', '/admin/all-investment')
+    localStorage.setItem('IndividualData', JSON.stringify(data))
 
     if (response.ok){
       const interestData = await InvestmentIntrest(data.user, data.investment_id);

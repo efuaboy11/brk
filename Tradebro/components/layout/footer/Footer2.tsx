@@ -36,7 +36,7 @@ export default function Footer2() {
                                 <div className="single-footer-widget-style2">
                                     <div className="footer-logo-style2">
                                         <Link href="/index-2">
-                                            <Image src="/assets/images/resources/footer-2-logo-1.png" alt="Logo" width={189} height={27} priority />
+                                            {/* <Image src="/assets/images/resources/footer-2-site-logo.png" alt="Logo" width={189} height={27} priority /> */}
                                         </Link>
                                     </div>
                                     <div className="single-footer-widget-style2__inner">

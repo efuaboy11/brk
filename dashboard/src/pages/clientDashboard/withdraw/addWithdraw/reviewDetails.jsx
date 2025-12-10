@@ -78,7 +78,7 @@ export const WithdrawReviewDetails = () =>{
 
   const BankCardFunction = async() =>{   
 
-    let response = await fetch(`https://api.amanilightequity.com/api/bank-card/${sessionStorage.getItem('paymentMethodID')}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/bank-card/${localStorage.getItem('paymentMethodID')}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -99,7 +99,7 @@ export const WithdrawReviewDetails = () =>{
   }
 
   const BankAccountFunction = async() =>{
-    let response = await fetch(`https://api.amanilightequity.com/api/bank-account/${sessionStorage.getItem('paymentMethodID')}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/bank-account/${localStorage.getItem('paymentMethodID')}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const WithdrawReviewDetails = () =>{
   }
 
   const WalletAddressFunction = async() =>{
-      let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${sessionStorage.getItem('paymentMethodID')}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${localStorage.getItem('paymentMethodID')}/`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -211,25 +211,25 @@ export const WithdrawReviewDetails = () =>{
 
 
   useEffect(() =>{
-    setPaymentTypeID(sessionStorage.getItem('paymentTypeID'))
-    setPaymentTypeName(sessionStorage.getItem('PaymentTypeName'))
-    setPaymentMethodID(sessionStorage.getItem('paymentMethodID'))
-    setUrlLink( sessionStorage.getItem('urlLink'))
-    setAmount(sessionStorage.getItem('amount'))
+    setPaymentTypeID(localStorage.getItem('paymentTypeID'))
+    setPaymentTypeName(localStorage.getItem('PaymentTypeName'))
+    setPaymentMethodID(localStorage.getItem('paymentMethodID'))
+    setUrlLink( localStorage.getItem('urlLink'))
+    setAmount(localStorage.getItem('amount'))
 
-    if(sessionStorage.getItem('PaymentTypeName') === 'Bank Card'){
+    if(localStorage.getItem('PaymentTypeName') === 'Bank Card'){
       BankCardFunction()
       setShowBankCardDetails(true)
     }
 
-    if(sessionStorage.getItem('PaymentTypeName') === 'Bank Account'){
+    if(localStorage.getItem('PaymentTypeName') === 'Bank Account'){
       BankAccountFunction()
       setShowBankAccountDetails(true)
     }
 
-    if(sessionStorage.getItem('PaymentTypeName') === 'Wallet Address'){
+    if(localStorage.getItem('PaymentTypeName') === 'Wallet Address'){
       WalletAddressFunction()
-      console.log(sessionStorage.getItem('PaymentTypeName') === 'Wallet Address')
+      console.log(localStorage.getItem('PaymentTypeName') === 'Wallet Address')
       setShowWalletDetails(true)
     }
 

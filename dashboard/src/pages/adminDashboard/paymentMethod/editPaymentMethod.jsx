@@ -175,7 +175,7 @@ export const EditPaymentMethod = () =>{
 
 
   useEffect(() => {
-    const data = sessionStorage.getItem("IndividualData");
+    const data = localStorage.getItem("IndividualData");
     if (data) {
       const parsedData = JSON.parse(data);
       setDetails(parsedData)

@@ -67,7 +67,7 @@ export const ClientKYC = () =>{
   const onSubmit = (data, e) =>{
     setDisablebutton(true)
     if(isValid){
-      sessionStorage.setItem('despositAmount', amount)
+      localStorage.setItem('despositAmount', amount)
       IndvividualPaymentMethod()     
     }else{
       setDisablebutton(false)
@@ -84,7 +84,7 @@ export const ClientKYC = () =>{
       
     })
     const data = await response.json()
-    sessionStorage.setItem('paymentMethod', JSON.stringify(data))
+    localStorage.setItem('paymentMethod', JSON.stringify(data))
     if (response.ok){
       setLoader(true)
       navigate('/dashboard/deposit/step-2/')

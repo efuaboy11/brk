@@ -78,7 +78,7 @@ export const ClientBankCardWithdraw = () =>{
 
   const selectDetails = (id) =>{
     setSelectedDataId(selectedDataId === id ? null : id);
-    sessionStorage.setItem('paymentMethodID', id)
+    localStorage.setItem('paymentMethodID', id)
 
   }
 
@@ -115,7 +115,7 @@ export const ClientBankCardWithdraw = () =>{
 
   const navigateReviewDetails = () =>{
     setProcessingText("Evaluating")
-    sessionStorage.setItem('urlLink', '/dashboard/withdraw/bank-card/')
+    localStorage.setItem('urlLink', '/dashboard/withdraw/bank-card/')
     setLoader(true)
     const timer = setTimeout(() => {
       navigate('/dashboard/withdraw/review-details/')

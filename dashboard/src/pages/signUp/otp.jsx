@@ -31,8 +31,8 @@ export const OTP = () => {
     errorMessages
   } = useContext(AuthContext);
 
-  setPassword(sessionStorage.getItem('password'));
-  setEmail(sessionStorage.getItem('email'));
+  setPassword(localStorage.getItem('password'));
+  setEmail(localStorage.getItem('email'));
 
   const { register, handleSubmit, formState: { errors, isValid } } = useForm();
 

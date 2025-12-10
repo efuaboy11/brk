@@ -3,14 +3,14 @@ const AccessContext = createContext();
 
 export const AccessProvider = ({children}) =>{
     const [visitedRoutes, setVisitedRoutes] = useState(() => {
-        // Load visited routes from sessionStorage on initialization
-        const storedRoutes = sessionStorage.getItem("visitedRoutes");
+        // Load visited routes from localStorage on initialization
+        const storedRoutes = localStorage.getItem("visitedRoutes");
         return storedRoutes ? JSON.parse(storedRoutes) : [];
       });
     
-      // Update sessionStorage whenever visitedRoutes changes
+      // Update localStorage whenever visitedRoutes changes
       useEffect(() => {
-        sessionStorage.setItem("visitedRoutes", JSON.stringify(visitedRoutes));
+        localStorage.setItem("visitedRoutes", JSON.stringify(visitedRoutes));
       }, [visitedRoutes]);
     
       const addRoute = (route) => {

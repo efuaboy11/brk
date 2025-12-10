@@ -273,7 +273,7 @@ export const DepositHistory = () =>{
       
     })
     const data = await response.json()
-    sessionStorage.setItem('IndividualDepsoit', JSON.stringify(data))
+    localStorage.setItem('IndividualDepsoit', JSON.stringify(data))
 
     if (response.ok){
       navigate(`/dashboard/deposit/history/${data.transaction_id}`)

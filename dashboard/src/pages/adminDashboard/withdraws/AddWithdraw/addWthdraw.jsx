@@ -136,9 +136,9 @@ export const AddWithdraw = () =>{
 
    
   useEffect(() =>{
-		setUser(sessionStorage.getItem('userID'))
-		setPaymentMethodType(sessionStorage.getItem('paymentTypeID'))
-		setPaymentMethodId(sessionStorage.getItem('paymentMethodID'))
+		setUser(localStorage.getItem('userID'))
+		setPaymentMethodType(localStorage.getItem('paymentTypeID'))
+		setPaymentMethodId(localStorage.getItem('paymentMethodID'))
 
 	}, [])
   

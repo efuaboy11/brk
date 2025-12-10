@@ -121,7 +121,7 @@ export const ClientBankCard = () =>{
       
     })
     const data = await response.json()
-    sessionStorage.setItem('IndividualData', JSON.stringify(data))
+    localStorage.setItem('IndividualData', JSON.stringify(data))
 
     if (response.ok){
       navigate(`/dashboard/payment-gateway/bank-card/${data.bank_card_id}`)
@@ -194,9 +194,9 @@ export const ClientBankCard = () =>{
       
     })
     const data = await response.json()
-    sessionStorage.setItem('urlName', 'Users')
-    sessionStorage.setItem('urlLink', '/admin/user/list')
-    sessionStorage.setItem('IndividualUserData', JSON.stringify(data))
+    localStorage.setItem('urlName', 'Users')
+    localStorage.setItem('urlLink', '/admin/user/list')
+    localStorage.setItem('IndividualUserData', JSON.stringify(data))
 
     if(response.ok){
       navigate(`/admin/user/${data.user}`)

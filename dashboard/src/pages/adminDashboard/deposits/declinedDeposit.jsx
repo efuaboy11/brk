@@ -107,9 +107,9 @@ export const DeclinedDeposit = () =>{
       
     })
     const data = await response.json()
-    sessionStorage.setItem('TypeOfDeposit', 'Declined')
-    sessionStorage.setItem('TypeOfDepositUrl', '/admin/declined-deposits')
-    sessionStorage.setItem('IndividualDepsoit', JSON.stringify(data))
+    localStorage.setItem('TypeOfDeposit', 'Declined')
+    localStorage.setItem('TypeOfDepositUrl', '/admin/declined-deposits')
+    localStorage.setItem('IndividualDepsoit', JSON.stringify(data))
 
     if (response.ok){
       navigate(`/admin/all-deposits/${data.transaction_id}`)
@@ -133,9 +133,9 @@ export const DeclinedDeposit = () =>{
       
     })
     const data = await response.json()
-    sessionStorage.setItem('urlName', 'Users')
-    sessionStorage.setItem('urlLink', '/admin/user/list')
-    sessionStorage.setItem('IndividualUserData', JSON.stringify(data))
+    localStorage.setItem('urlName', 'Users')
+    localStorage.setItem('urlLink', '/admin/user/list')
+    localStorage.setItem('IndividualUserData', JSON.stringify(data))
 
     if(response.ok){
       navigate(`/admin/user/${data.id}`)

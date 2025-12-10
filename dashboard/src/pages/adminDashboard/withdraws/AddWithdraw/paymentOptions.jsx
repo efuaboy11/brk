@@ -16,17 +16,17 @@ export const PaymetntDetailsOptionsWithdraw = () =>{
 
 
   const navigateBankCard = () =>{
-    sessionStorage.setItem('paymentTypeID', 31)
+    localStorage.setItem('paymentTypeID', 31)
     navigate('/admin/withdraw/bank-card')
   }
 
   const navigateBankAccount = () =>{
-    sessionStorage.setItem('paymentTypeID', 30)
+    localStorage.setItem('paymentTypeID', 30)
     navigate('/admin/withdraw/bank-account')
   }
 
   const navigateWalletAdress = () =>{
-    sessionStorage.setItem('paymentTypeID', 29)
+    localStorage.setItem('paymentTypeID', 29)
     navigate('/admin/withdraw/wallet-address')
   }
 

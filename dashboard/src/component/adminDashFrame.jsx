@@ -75,44 +75,44 @@ export const AdminDashFrame = () =>{
 
 
   useEffect(() => {
-    setDepositCount(sessionStorage.getItem('depositCount') || "0");
-    setSucessDepositCount(sessionStorage.getItem('successDespositCount') || "0");
-    setDeclinedDepositCount(sessionStorage.getItem('declinedDeposit') || "0");
-    setPendingDespositCount(sessionStorage.getItem('pendingDespositCount') || "0");
+    setDepositCount(localStorage.getItem('depositCount') || "0");
+    setSucessDepositCount(localStorage.getItem('successDespositCount') || "0");
+    setDeclinedDepositCount(localStorage.getItem('declinedDeposit') || "0");
+    setPendingDespositCount(localStorage.getItem('pendingDespositCount') || "0");
 
-    setWithdrawCount(sessionStorage.getItem('withdrawCount') || "0");
-    setSuccessWithdrawCount(sessionStorage.getItem('SuccessWithdrawCount') || "0");
-    setPendingWithdrawCount(sessionStorage.getItem('pendingWithdrawCount') || "0");
-    setDeclinedWithdrawCount(sessionStorage.getItem('declinedWithdrawCount') || "0");
+    setWithdrawCount(localStorage.getItem('withdrawCount') || "0");
+    setSuccessWithdrawCount(localStorage.getItem('SuccessWithdrawCount') || "0");
+    setPendingWithdrawCount(localStorage.getItem('pendingWithdrawCount') || "0");
+    setDeclinedWithdrawCount(localStorage.getItem('declinedWithdrawCount') || "0");
 
 
-    setWalletAddressCount(sessionStorage.getItem('WalletCount') || "0");
-    setBankAccountCount(sessionStorage.getItem('BankAccountCount') || "0");
-    setBankCardCount(sessionStorage.getItem('BanKCardCount') || "0");
+    setWalletAddressCount(localStorage.getItem('WalletCount') || "0");
+    setBankAccountCount(localStorage.getItem('BankAccountCount') || "0");
+    setBankCardCount(localStorage.getItem('BanKCardCount') || "0");
 
-    setInvestmentCount(sessionStorage.getItem('investmentCount') || "0");
-    setActiveInvestmentCount(sessionStorage.getItem('activeInvestmentCount') || "0");
-    setCompletednvestmentCount(sessionStorage.getItem('completedInvestmentCount') || "0");
-    setPendingInvestmentCount(sessionStorage.getItem('pendingInvestmentCount') || "0");
-    setDeclinedInvestmentCount(sessionStorage.getItem('declinedInvestmentCount') || "0");
+    setInvestmentCount(localStorage.getItem('investmentCount') || "0");
+    setActiveInvestmentCount(localStorage.getItem('activeInvestmentCount') || "0");
+    setCompletednvestmentCount(localStorage.getItem('completedInvestmentCount') || "0");
+    setPendingInvestmentCount(localStorage.getItem('pendingInvestmentCount') || "0");
+    setDeclinedInvestmentCount(localStorage.getItem('declinedInvestmentCount') || "0");
 
-    setUserCount(sessionStorage.getItem('usersCount') || "0");
-    setDisableUserCount(sessionStorage.getItem('disableUserCount') || "0");
-    setUserVerificationCount(sessionStorage.getItem('userVerificationCount') || "0");
-    setPendingUserVerificationCount(sessionStorage.getItem('pendingUserVerificationCount') || "0");
-    setCanceledUserVerificationCount(sessionStorage.getItem('canceledUserVerificationCount') || "0");
-    setUnverfiedUserCount(sessionStorage.getItem('unverifiedUserCount') || "0");
-    setVerifiedUserCount(sessionStorage.getItem('verifiedUserCount') || "0");
+    setUserCount(localStorage.getItem('usersCount') || "0");
+    setDisableUserCount(localStorage.getItem('disableUserCount') || "0");
+    setUserVerificationCount(localStorage.getItem('userVerificationCount') || "0");
+    setPendingUserVerificationCount(localStorage.getItem('pendingUserVerificationCount') || "0");
+    setCanceledUserVerificationCount(localStorage.getItem('canceledUserVerificationCount') || "0");
+    setUnverfiedUserCount(localStorage.getItem('unverifiedUserCount') || "0");
+    setVerifiedUserCount(localStorage.getItem('verifiedUserCount') || "0");
 
-    setKYCsCount(sessionStorage.getItem('KYCsCount') || "0");
-    setNotUploadKYCsCount(sessionStorage.getItem('notUploadKYCsCount') || "0");
-    setVerifiedKYCsCount(sessionStorage.getItem('verifiedKYCsCount') || "0");
-    setCanceledKYCsCount(sessionStorage.getItem('canceledKYCsCount') || "0");
-    setPendingKYCsCount(sessionStorage.getItem('pendingKYCsCount') || "0");
+    setKYCsCount(localStorage.getItem('KYCsCount') || "0");
+    setNotUploadKYCsCount(localStorage.getItem('notUploadKYCsCount') || "0");
+    setVerifiedKYCsCount(localStorage.getItem('verifiedKYCsCount') || "0");
+    setCanceledKYCsCount(localStorage.getItem('canceledKYCsCount') || "0");
+    setPendingKYCsCount(localStorage.getItem('pendingKYCsCount') || "0");
 
-    setEmailCount(sessionStorage.getItem('emailCount') || "0");
-    setInvestmentPlanCount(sessionStorage.getItem('investmentPlanCount') || "0");
-    setPaymentOptionsCount(sessionStorage.getItem('paymentOptionsCount') || "0");
+    setEmailCount(localStorage.getItem('emailCount') || "0");
+    setInvestmentPlanCount(localStorage.getItem('investmentPlanCount') || "0");
+    setPaymentOptionsCount(localStorage.getItem('paymentOptionsCount') || "0");
 }, []);
 
   

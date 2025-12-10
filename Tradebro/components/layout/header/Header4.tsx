@@ -21,7 +21,7 @@ export default function Header4({ scroll, handleMobileMenu }: Header4Props) {
                         <div className="main-header-style4__content-left">
                             <div className="header-logo-box-style4">
                                 <Link href="/index-4">
-                                    <Image src="/assets/images/resources/logo-4.png" alt="Awesome Logo" width={189} height={26} priority />
+                                    <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={189} height={26} priority />
                                 </Link>
                             </div>
 
@@ -32,7 +32,7 @@ export default function Header4({ scroll, handleMobileMenu }: Header4Props) {
                                         <div className="main-menu__wrapper-inner">
                                             <div className="sticky-logo-box-style1">
                                                 <Link href="/index-4">
-                                                    <Image src="/assets/images/resources/footer-2-logo-4.png" alt="Awesome Logo" width={189} height={27} priority />
+                                                    <Image src="/assets/images/resources/footer-2-site-logo.png" alt="Awesome Logo" width={189} height={27} priority />
                                                 </Link>
                                             </div>
                                             <div className="main-menu-style1__left">
@@ -117,7 +117,7 @@ export default function Header4({ scroll, handleMobileMenu }: Header4Props) {
                     <div className="main-menu__wrapper-inner">
                         <div className="sticky-logo-box-style1">
                             <Link href="/">
-                                <Image src="/assets/images/resources/logo-1.png" alt="Awesome Logo" width={189} height={27} priority />
+                                <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={189} height={27} priority />
                             </Link>
                         </div>
                         <div className="main-menu-style1__left">

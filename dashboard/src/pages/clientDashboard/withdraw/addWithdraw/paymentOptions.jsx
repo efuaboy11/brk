@@ -16,8 +16,8 @@ export const ClientPaymetntDetailsOptionsWithdraw = () =>{
 
   const [processingText, setProcessingText] = useState('Processing')
   const navigateBankCard = () =>{
-    sessionStorage.setItem('paymentTypeID', 31)
-    sessionStorage.setItem('PaymentTypeName', 'Bank Card')
+    localStorage.setItem('paymentTypeID', 31)
+    localStorage.setItem('PaymentTypeName', 'Bank Card')
     setProcessingText("Retrieving")
     setLoader(true)
     const timer = setTimeout(() => {
@@ -28,8 +28,8 @@ export const ClientPaymetntDetailsOptionsWithdraw = () =>{
   }
 
   const navigateBankAccount = () =>{
-    sessionStorage.setItem('paymentTypeID', 30)
-    sessionStorage.setItem('PaymentTypeName', 'Bank Account')
+    localStorage.setItem('paymentTypeID', 30)
+    localStorage.setItem('PaymentTypeName', 'Bank Account')
     setProcessingText("Retrieving")
     setLoader(true)
     const timer = setTimeout(() => {
@@ -40,8 +40,8 @@ export const ClientPaymetntDetailsOptionsWithdraw = () =>{
   }
 
   const navigateWalletAdress = () =>{
-    sessionStorage.setItem('paymentTypeID', 29)
-    sessionStorage.setItem('PaymentTypeName', 'Wallet Address')
+    localStorage.setItem('paymentTypeID', 29)
+    localStorage.setItem('PaymentTypeName', 'Wallet Address')
     setProcessingText("Retrieving")
     setLoader(true)
     const timer = setTimeout(() => {

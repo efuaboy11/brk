@@ -61,7 +61,7 @@ export const AddWithdraw1 = () =>{
   const onSubmit = (data, e) =>{
     setDisablebutton(true)
     if(isValid){
-      sessionStorage.setItem('amount', amount)
+      localStorage.setItem('amount', amount)
       setLoader(true)
       const timer = setTimeout(() => {
         if(roundUp(amount) <= roundUp(userProfile.user_balance.balance)){

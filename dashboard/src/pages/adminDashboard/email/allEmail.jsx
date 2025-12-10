@@ -160,7 +160,7 @@ export const AllEmail = () =>{
       
     })
     const data = await response.json()
-    sessionStorage.setItem('IndividualData', JSON.stringify(data))
+    localStorage.setItem('IndividualData', JSON.stringify(data))
 
     if(response.ok){
       console.log(data)

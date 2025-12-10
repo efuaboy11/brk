@@ -67,7 +67,7 @@ export default function Banner() {
                         <Image src="/assets/images/slides/slider-v1-mockup.webp" alt="Image" width={235} height={176} priority />
                     </div>
                     <div className="btn-box">
-                        <Link className="btn-one" href="#">
+                        <Link className="btn-one" target="_blank" href="https://portal.veloxarion.com/dashboard/home">
                             <span className="txt">Start Demo</span>
                             <i className="icon-right-arrow"></i>
                         </Link>

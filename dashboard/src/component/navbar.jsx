@@ -201,10 +201,10 @@ export const Navbar = () =>{
   }
 
   useEffect(() =>{
-    if(sessionStorage.getItem('tokenActive') === 'true'){
+    if(localStorage.getItem('tokenActive') === 'true'){
       setShowDashboardBtn(true)
     }
-    setDasLink(sessionStorage.getItem('dashLink'))
+    setDasLink(localStorage.getItem('dashLink'))
     setShowSidebar(false)
 
   }, [])

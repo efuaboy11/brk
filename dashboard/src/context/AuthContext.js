@@ -8,7 +8,7 @@ export default AuthContext
 export const AuthProvider = ({children}) =>{
     const [captchaToken, setCaptchaToken] = useState(null);
     const [activateCaptcha, setActivateCaptcha] = useState(false)
-    const [authTokens, setAuthToken] = useState(() => sessionStorage.getItem('authTokens') ? JSON.parse(sessionStorage.getItem('authTokens')): null)
+    const [authTokens, setAuthToken] = useState(() => localStorage.getItem('authTokens') ? JSON.parse(localStorage.getItem('authTokens')): null)
     const [userProfile, setUserProfile] = useState(null)
     const [password, setPassword] = useState("") 
     const [email, setEmail] = useState("") 
@@ -28,7 +28,7 @@ export const AuthProvider = ({children}) =>{
 
 
     const navigate = useNavigate()
-    const [user, setUser] = useState(() => sessionStorage.getItem("authTokens") ? jwtDecode(sessionStorage.getItem("authTokens")) : null)
+    const [user, setUser] = useState(() => localStorage.getItem("authTokens") ? jwtDecode(localStorage.getItem("authTokens")) : null)
 
     const [showSidebar, setShowSidebar] = useState(false)
 
@@ -46,7 +46,7 @@ export const AuthProvider = ({children}) =>{
     };
 
     const handleTokenExpiry = () => {
-      sessionStorage.setItem('tokenActive',false)
+      localStorage.setItem('tokenActive',false)
       console.log('Token is either empty or expired. Executing function...');
       // Perform necessary actions, e.g., refreshing the token or logging out the user
     };
@@ -55,11 +55,11 @@ export const AuthProvider = ({children}) =>{
       if (!authTokens || isTokenExpired(authTokens?.access)) {
         handleTokenExpiry();
       }else{
-        sessionStorage.setItem('tokenActive',true)
+        localStorage.setItem('tokenActive',true)
         if(authTokens.role === "ADMIN"){
-          sessionStorage.setItem('dashLink', '/admin/home')
+          localStorage.setItem('dashLink', '/admin/home')
         }else{
-          sessionStorage.setItem('dashLink', '/dashboard/home')
+          localStorage.setItem('dashLink', '/dashboard/home')
       }
       }
     }, [authTokens]);
@@ -278,8 +278,8 @@ export const AuthProvider = ({children}) =>{
               setIsSuccess(true)
               showAlert()
               setLoader(false)
-              sessionStorage.setItem("email", email);
-              sessionStorage.setItem('password', password)
+              localStorage.setItem("email", email);
+              localStorage.setItem('password', password)
               console.log('sucees')
               setMessage("An OTP code has been sent to your mail")
               console.log(page)
@@ -354,13 +354,13 @@ export const AuthProvider = ({children}) =>{
                 setAuthToken(data)
                 const decodedUser = jwtDecode(data.access);
                 setUser(decodedUser);
-                sessionStorage.setItem("authTokens", JSON.stringify(data));
+                localStorage.setItem("authTokens", JSON.stringify(data));
                 console.log("Successful");
                 setMessage("Login Sucessfull")
                 showAlert()
                 setIsSuccess(true)
-                sessionStorage.removeItem("email");
-                sessionStorage.removeItem('password')
+                localStorage.removeItem("email");
+                localStorage.removeItem('password')
                 if(data.role === "ADMIN"){
                     navigate('/admin/home')
                 }else{
@@ -410,7 +410,7 @@ export const AuthProvider = ({children}) =>{
                 },
 
                 body: JSON.stringify({
-                    email: sessionStorage.getItem('email'),
+                    email: localStorage.getItem('email'),
                     otp: otp,
                     new_password: password
                 })
@@ -422,8 +422,8 @@ export const AuthProvider = ({children}) =>{
                 setShowAnimation(false)
                 showAlert()
                 setMessage('Your password have been updated')
-                sessionStorage.removeItem("email");
-                sessionStorage.removeItem('password')
+                localStorage.removeItem("email");
+                localStorage.removeItem('password')
                 navigate(`/${page}`)
                 setLoader(false)
                 setOtp('')
@@ -465,7 +465,7 @@ export const AuthProvider = ({children}) =>{
         if(response.status === 200){
             console.log("token updated")
             setAuthToken(data)
-            sessionStorage.setItem("authTokens", JSON.stringify(data))
+            localStorage.setItem("authTokens", JSON.stringify(data))
         }else{
             LogoutUser()
         }
@@ -473,13 +473,13 @@ export const AuthProvider = ({children}) =>{
 
     const LogoutUser = () =>{
         setAuthToken(null)
-        sessionStorage.removeItem("authTokens")
+        localStorage.removeItem("authTokens")
         navigate("/login")
         console.log("sucessfull")
         setIsSuccess(true)
         showAlert()
         setUser(null)
-        sessionStorage.clear()
+        localStorage.clear()
         setCaptchaToken(null)
         setMessage("Thank you for trading with AmaniLightEquity")
         

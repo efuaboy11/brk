@@ -75,7 +75,7 @@ export const ClientWalletWithdraw = () =>{
   }
   const selectDetails = (id) =>{
     setSelectedDataId(selectedDataId === id ? null : id);
-    sessionStorage.setItem('paymentMethodID', id)
+    localStorage.setItem('paymentMethodID', id)
 
   }
 
@@ -109,7 +109,7 @@ export const ClientWalletWithdraw = () =>{
 
   const navigateReviewDetails = () =>{
     setProcessingText("Evaluating")
-    sessionStorage.setItem('urlLink', '/dashboard/withdraw/wallet-address/')
+    localStorage.setItem('urlLink', '/dashboard/withdraw/wallet-address/')
     setLoader(true)
     const timer = setTimeout(() => {
       navigate('/dashboard/withdraw/review-details/')
@@ -133,7 +133,7 @@ export const ClientWalletWithdraw = () =>{
   }, [!userID])
 
   useEffect(() =>{
-    setUserID(sessionStorage.getItem('userID'))
+    setUserID(localStorage.getItem('userID'))
   }, [])
 
 

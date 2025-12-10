@@ -237,7 +237,7 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setDepositCount(data.length)
       }
-      sessionStorage.setItem("depositCount", data.length);
+      localStorage.setItem("depositCount", data.length);
 
 
 
@@ -296,11 +296,11 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setSuccessDepositCount(data.length)       
       }
-      sessionStorage.setItem('successDespositCount', data.length)
+      localStorage.setItem('successDespositCount', data.length)
 
       const totalAmount = data.reduce((acc, item) => acc + parseFloat(item.amount), 0)
       setTotalDeposit(totalAmount)
-      sessionStorage.setItem('depositTotal', totalAmount)
+      localStorage.setItem('depositTotal', totalAmount)
 
 
       const sortedData = data.sort((a, b) => b.id - a.id);
@@ -357,7 +357,7 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setDeclinedDepositCount(data.length)
       }
-      sessionStorage.setItem("declinedDeposit", data.length);
+      localStorage.setItem("declinedDeposit", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       // Get the 5 most recent entries
@@ -414,7 +414,7 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setPendingDespositCount(data.length)
       }
-      sessionStorage.setItem("pendingDespositCount", data.length);
+      localStorage.setItem("pendingDespositCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       // Get the 5 most recent entries
@@ -470,7 +470,7 @@ export const AllDataProvider =  ({ children }) =>{
         setWithdrawCount(data.length)
 
       }
-      sessionStorage.setItem("withdrawCount", data.length);
+      localStorage.setItem("withdrawCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       // Get the 5 most recent entries
@@ -527,7 +527,7 @@ export const AllDataProvider =  ({ children }) =>{
         setSuccessWithdrawCount(data.length)
         
       }
-      sessionStorage.setItem("SuccessWithdrawCount", data.length);
+      localStorage.setItem("SuccessWithdrawCount", data.length);
 
       const totalAmount = data.reduce((acc, item) => acc + parseFloat(item.amount), 0)
       setTotalWithdraw(totalAmount)
@@ -587,7 +587,7 @@ export const AllDataProvider =  ({ children }) =>{
         setPendingWithdrawCount(data.length)
         
       }
-      sessionStorage
+      localStorage
 .setItem("pendingWithdrawCount", data.length);
       const sortedData = data.sort((a, b) => b.id - a.id);
       // Get the 5 most recent entries
@@ -645,7 +645,7 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setDeclinedWithdrawCount(data.length)
       }
-      sessionStorage.setItem("declinedWithdrawCount", data.length);
+      localStorage.setItem("declinedWithdrawCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       // Get the 5 most recent entries
@@ -709,7 +709,7 @@ export const AllDataProvider =  ({ children }) =>{
       const total = data.reduce((acc, item) => acc + parseFloat(item.amount), 0)
       setTotalInterest(total)
       
-      sessionStorage.setItem('InterestTotal', total)
+      localStorage.setItem('InterestTotal', total)
 
     }else{
       setInterestLoader(false)
@@ -733,7 +733,7 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setWalletAddressCount(data.length)
       }
-      sessionStorage.setItem("WalletCount", data.length);
+      localStorage.setItem("WalletCount", data.length);
       const sortedData = data.sort((a, b) => b.id - a.id);
       setWalletAddressData(sortedData)
       setWalletAddressLoader(false)
@@ -785,7 +785,7 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setBankAccountCount(data.length)
       }
-      sessionStorage.setItem("BankAccountCount", data.length);
+      localStorage.setItem("BankAccountCount", data.length);
       const sortedData = data.sort((a, b) => b.id - a.id);
       setBankAccountData(sortedData)
       setBankAccountLoader(false)
@@ -837,7 +837,7 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setBankCardCount(data.length)
       }
-      sessionStorage.setItem("BanKCardCount", data.length);
+      localStorage.setItem("BanKCardCount", data.length);
       const sortedData = data.sort((a, b) => b.id - a.id);
       setBankCardData(sortedData)
       setBankCardLoader(false)
@@ -919,7 +919,7 @@ export const AllDataProvider =  ({ children }) =>{
         setInvestmentCount(data.length)
  
       }
-      sessionStorage.setItem("investmentCount", data.length);
+      localStorage.setItem("investmentCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setInvestmentData(sortedData)
@@ -969,7 +969,7 @@ export const AllDataProvider =  ({ children }) =>{
         setSuccessfulInvestmentCount(data.length)
 
       }
-      sessionStorage.setItem("successfulInvestmentCount", data.length);
+      localStorage.setItem("successfulInvestmentCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       const total = data.reduce((acc, item) => acc + parseFloat(item.amount), 0)
@@ -997,7 +997,7 @@ export const AllDataProvider =  ({ children }) =>{
         setActiveInvestmentCount(data.length)
 
       }
-      sessionStorage.setItem("activeInvestmentCount", data.length);
+      localStorage.setItem("activeInvestmentCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       const recentData = sortedData.slice(0, 1);
@@ -1050,7 +1050,7 @@ export const AllDataProvider =  ({ children }) =>{
         setPendingInvestmentCount(data.length)
         
       }
-      sessionStorage.setItem("pendingInvestmentCount", data.length);
+      localStorage.setItem("pendingInvestmentCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setPendingInvestment(sortedData)
@@ -1101,7 +1101,7 @@ export const AllDataProvider =  ({ children }) =>{
         setCompletednvestmentCount(data.length)
         
       }
-      sessionStorage.setItem("completedInvestmentCount", data.length);
+      localStorage.setItem("completedInvestmentCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setCompletedInvestment(sortedData)
@@ -1154,7 +1154,7 @@ export const AllDataProvider =  ({ children }) =>{
         setDeclinedInvestmentCount(data.length)
         
       }
-      sessionStorage.setItem("declinedInvestmentCount", data.length);
+      localStorage.setItem("declinedInvestmentCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setDecinedInvestment(sortedData)
@@ -1206,7 +1206,7 @@ export const AllDataProvider =  ({ children }) =>{
         setUserCount(data.length)
 
       }
-      sessionStorage.setItem("usersCount", data.length);
+      localStorage.setItem("usersCount", data.length);
 
       const sortedData = data.sort((a, b) => new Date(b.date_joined) - new Date(a.date_joined));
       // Get the 5 most recent entries
@@ -1258,7 +1258,7 @@ export const AllDataProvider =  ({ children }) =>{
         setDisableUserCount(data.length)
 
       }
-      sessionStorage.setItem("disableUserCount", data.length);
+      localStorage.setItem("disableUserCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setDisableUserData(sortedData)
@@ -1311,7 +1311,7 @@ export const AllDataProvider =  ({ children }) =>{
       const sortedData = data.sort((a, b) => b.id - a.id);
       setUserVerificationData(sortedData)
       setUserVerificationLoader(false)
-      sessionStorage.setItem("userVerificationCount", data.length);
+      localStorage.setItem("userVerificationCount", data.length);
     }
   }
 
@@ -1357,7 +1357,7 @@ export const AllDataProvider =  ({ children }) =>{
       const sortedData = data.sort((a, b) => b.id - a.id);
       setPendingUserVerificationData(sortedData)
       setPendingUserVerificationLoader(false)
-      sessionStorage.setItem("pendingUserVerificationCount", data.length);
+      localStorage.setItem("pendingUserVerificationCount", data.length);
     }else{
       setPendingUserVerificationLoader(false)
     }
@@ -1406,7 +1406,7 @@ export const AllDataProvider =  ({ children }) =>{
       const sortedData = data.sort((a, b) => b.id - a.id);
       setCanceledUserVerificationData(sortedData)
       setCanceledUserVerificationLoader(false)
-      sessionStorage.setItem("canceledUserVerificationCount", data.length);
+      localStorage.setItem("canceledUserVerificationCount", data.length);
     }
   }
 
@@ -1449,7 +1449,7 @@ export const AllDataProvider =  ({ children }) =>{
         setUnverfiedUserCount(data.length)
        
       }
-      sessionStorage.setItem("unverifiedUserCount", data.length);
+      localStorage.setItem("unverifiedUserCount", data.length);
       const sortedData = data.sort((a, b) => b.id - a.id);
       setUnverfiedUserData(sortedData)
       setUnverfiedUserLoader(false)
@@ -1495,7 +1495,7 @@ export const AllDataProvider =  ({ children }) =>{
         setVerifiedUserCount(data.length)
         
       }
-      sessionStorage.setItem("verifiedUserCount", data.length);
+      localStorage.setItem("verifiedUserCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setVerifiedUserData(sortedData)
@@ -1542,7 +1542,7 @@ export const AllDataProvider =  ({ children }) =>{
         setKYCsCount(data.length)
 
       }
-      sessionStorage.setItem("KYCsCount", data.length);
+      localStorage.setItem("KYCsCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setKYCData(sortedData)
@@ -1591,7 +1591,7 @@ export const AllDataProvider =  ({ children }) =>{
         setNotUploadKYCsCount(data.length)
         
       }
-      sessionStorage.setItem("notUploadKYCsCount", data.length);
+      localStorage.setItem("notUploadKYCsCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setNotUploadKYCData(sortedData)
@@ -1640,7 +1640,7 @@ export const AllDataProvider =  ({ children }) =>{
         setVerifiedKYCsCount(data.length)
        
       }
-      sessionStorage.setItem("verifiedKYCsCount", data.length);
+      localStorage.setItem("verifiedKYCsCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setVerifiedKYCData(sortedData)
@@ -1691,7 +1691,7 @@ export const AllDataProvider =  ({ children }) =>{
         
       }
 
-      sessionStorage.setItem("canceledKYCsCount", data.length);
+      localStorage.setItem("canceledKYCsCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setCanceledKYCData(sortedData)
@@ -1739,7 +1739,7 @@ export const AllDataProvider =  ({ children }) =>{
       if(Array.isArray(data) && data.length > 0){
         setPendingKYCsCount(data.length)
       }
-      sessionStorage.setItem("pendingKYCsCount", data.length);
+      localStorage.setItem("pendingKYCsCount", data.length);
 
       const sortedData = data.sort((a, b) => b.id - a.id);
       setPendingKYCData(sortedData)
@@ -1790,7 +1790,7 @@ export const AllDataProvider =  ({ children }) =>{
         setPaymentOptionsCount(data.length)
         
       }
-      sessionStorage.setItem("paymentOptionsCount", data.length);
+      localStorage.setItem("paymentOptionsCount", data.length);
       const sortedData = data.sort((a, b) => b.id - a.id);
       setPaymentOptionsData(sortedData)
       setPaymentOptionsLoader(false)
@@ -1887,7 +1887,7 @@ export const AllDataProvider =  ({ children }) =>{
         setInvestmentPlanCount(data.length)
        
       }
-      sessionStorage.setItem("investmentPlanCount", data.length);
+      localStorage.setItem("investmentPlanCount", data.length);
 
       // const sortedData = data.sort((a, b) => b.id - a.id);
       setInvestPlanData(data)
@@ -1944,7 +1944,7 @@ export const AllDataProvider =  ({ children }) =>{
       setEmailData(sortedData)
       setEmailLoader(false)
 
-      sessionStorage.setItem("emailCount", data.length);
+      localStorage.setItem("emailCount", data.length);
     }
   }
 

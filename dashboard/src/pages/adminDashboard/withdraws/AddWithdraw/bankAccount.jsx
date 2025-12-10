@@ -78,7 +78,7 @@ export const BankAccountWithdraw = () =>{
 
   const selectDetails = (id) =>{
     setSelectedDataId(selectedDataId === id ? null : id);
-    sessionStorage.setItem('paymentMethodID', id)
+    localStorage.setItem('paymentMethodID', id)
 
   }
 
@@ -119,7 +119,7 @@ export const BankAccountWithdraw = () =>{
   }, [!userID])
 
   useEffect(() =>{
-    setUserID(sessionStorage.getItem('userID'))
+    setUserID(localStorage.getItem('userID'))
   }, [])
 
 

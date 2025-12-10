@@ -16,7 +16,7 @@ export default function Footer4() {
                     style={{ backgroundImage: "url(/assets/images/shapes/footer-v4-bg.jpg)" }}>
                 </div>
                 <div className="footer-main-style4__img">
-                    <Image src="/assets/images/shapes/footer-v4-img1.png" className="float-bob-y" alt="Image" width={174} height={170} priority />
+                    {/* <Image src="/assets/images/shapes/footer-v4-img1.png" className="float-bob-y" alt="Image" width={174} height={170} priority /> */}
                 </div>
                 <div className="footer-main-style4__shape1">
                     <Image src="/assets/images/shapes/footer-v4-shape1.png" className="float-bob-y" alt="Shape" width={477} height={293} priority />
@@ -94,7 +94,7 @@ export default function Footer4() {
                         <div className="footer-main-style4__bottom-middle text-center">
                             <div className="footer-logo-style4">
                                 <Link href="/index-4">
-                                    <Image src="/assets/images/resources/footer-2-logo-4.png" alt="Logo" width={189} height={27} priority />
+                                    <Image src="/assets/images/resources/footer-2-site-logo.png" alt="Logo" width={189} height={27} priority />
                                 </Link>
                             </div>
                             <div className="copyright-text-style4">

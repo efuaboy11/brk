@@ -31,7 +31,7 @@ export default function MobileMenu({ handleMobileMenu }: MobileMenuProps) {
 
           <div className="logo-box">
               <Link href="/" aria-label="logo image">
-                  <Image src="/assets/images/resources/mobile-nav-logo.png" alt="Image" width={189} height={27} priority />
+                  <Image src="/assets/images/resources/site-logo.png" alt="Image" width={189} height={27} priority />
               </Link>
           </div>
 

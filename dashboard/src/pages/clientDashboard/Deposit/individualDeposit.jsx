@@ -23,7 +23,7 @@ export const ClientIndividualDeposit = () =>{
   const [details, setDetails] = useState(null)
 
   useEffect(() =>{
-    const data = sessionStorage.getItem("IndividualDepsoit")
+    const data = localStorage.getItem("IndividualDepsoit")
 
 
     if(data){

@@ -96,7 +96,7 @@ export default function Accounts_Page() {
                                     </li>
                                 </ul>
                                 <div className="btn-box">
-                                    <Link href="#" className="btn-one">
+                                    <Link target="_blank" href="https://portal.veloxarion.com" className="btn-one">
                                         <span className="txt">
                                             Open Account
                                             <i className="icon-right-arrow"></i>
@@ -156,7 +156,7 @@ export default function Accounts_Page() {
                                     </li>
                                 </ul>
                                 <div className="btn-box">
-                                    <Link href="#" className="btn-one">
+                                    <Link target="_blank" href="https://portal.veloxarion.com"className="btn-one">
                                         <span className="txt">
                                             Open Account
                                             <i className="icon-right-arrow"></i>
@@ -216,7 +216,7 @@ export default function Accounts_Page() {
                                     </li>
                                 </ul>
                                 <div className="btn-box">
-                                    <Link href="#" className="btn-one">
+                                    <Link target="_blank" href="https://portal.veloxarion.com"className="btn-one">
                                         <span className="txt">
                                             Open Account
                                             <i className="icon-right-arrow"></i>

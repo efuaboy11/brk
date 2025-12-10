@@ -212,10 +212,10 @@ export const IndividualKYC = () =>{
     } 
   }
   useEffect(() =>{
-    const data = sessionStorage.getItem("IndividualData")
+    const data = localStorage.getItem("IndividualData")
 
-    setUrlName(sessionStorage.getItem('urlName'))
-    setUrlLink(sessionStorage.getItem('urlLink'))
+    setUrlName(localStorage.getItem('urlName'))
+    setUrlLink(localStorage.getItem('urlLink'))
     if(data){
       const parsedData = JSON.parse(data)
       setDetails(parsedData)

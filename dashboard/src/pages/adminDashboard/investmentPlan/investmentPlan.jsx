@@ -108,7 +108,7 @@ export const InvestmentPlan = () =>{
       
     })
     const data = await response.json()
-    sessionStorage
+    localStorage
 .setItem('IndividualData', JSON.stringify(data))
 
     if (response.ok){

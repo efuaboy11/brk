@@ -97,7 +97,7 @@ export const ClientInvestmentPlan = () =>{
 
 
   const NavigateToAddAmount = (id) =>{
-    sessionStorage.setItem('dataID', id)
+    localStorage.setItem('dataID', id)
     setLoader(true)
     const timer = setTimeout(() => {
       navigate('/dashboard/investment/buy-plan-amount/')

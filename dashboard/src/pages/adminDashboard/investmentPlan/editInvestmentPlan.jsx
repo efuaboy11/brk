@@ -180,7 +180,7 @@ export const EditInvestmentPlan = () =>{
 
 
   useEffect(() => {
-    const data = sessionStorage
+    const data = localStorage
 .getItem("IndividualData");
     if (data) {
       const parsedData = JSON.parse(data);

@@ -72,7 +72,7 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup, handleS
                             <div className="main-header-style3__content-bottom-left">
                                 <div className="header-logo-box-style3">
                                     <Link href="/index-3">
-                                        <Image src="/assets/images/resources/logo-3.png" alt="Awesome Logo" width={189} height={27} priority />
+                                        <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={189} height={27} priority />
                                     </Link>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup, handleS
                                         <div className="main-menu__wrapper-inner">
                                             <div className="sticky-logo-box-style1">
                                                 <Link href="/index-3">
-                                                    <Image src="/assets/images/resources/logo-3.png" alt="Awesome Logo" width={189} height={27} priority />
+                                                    <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={189} height={27} priority />
                                                 </Link>
                                             </div>
                                             <div className="main-menu-style1__left">
@@ -132,7 +132,7 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup, handleS
                     <div className="main-menu__wrapper-inner">
                         <div className="sticky-logo-box-style1">
                             <Link href="/">
-                                <Image src="/assets/images/resources/logo-3.png" alt="Awesome Logo" width={189} height={27} priority />
+                                <Image src="/assets/images/resources/site-logo.png" alt="Awesome Logo" width={189} height={27} priority />
                             </Link>
                         </div>
                         <div className="main-menu-style1__left">

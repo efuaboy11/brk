@@ -38,7 +38,7 @@ export default function Commodities_Market() {
                                         
                                         
                                         <div className="btn-box">
-                                            <Link href="#">
+                                            <Link target="_blank" href="https://portal.veloxarion.com/dashboard/home">
                                                 Start Trading Now
                                                 <i className="icon-right-arrow"></i>
                                             </Link>

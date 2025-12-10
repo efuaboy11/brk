@@ -76,7 +76,7 @@ export const WalletWithdraw = () =>{
   }
   const selectDetails = (id) =>{
     setSelectedDataId(selectedDataId === id ? null : id);
-    sessionStorage.setItem('paymentMethodID', id)
+    localStorage.setItem('paymentMethodID', id)
 
   }
 
@@ -113,7 +113,7 @@ export const WalletWithdraw = () =>{
   }, [!userID])
 
   useEffect(() =>{
-    setUserID(sessionStorage.getItem('userID'))
+    setUserID(localStorage.getItem('userID'))
   }, [])
 
 

@@ -19,7 +19,7 @@ export default function Footer1() {
                                         <div className="single-footer-widget-contact">
                                             <div className="footer-logo-style1">
                                                 <Link href="/">
-                                                    <Image src="/assets/images/resources/footer-1-logo-1.png" alt="Logo" width={188} height={27} priority />
+                                                    <Image src="/assets/images/resources/site-logo.png" alt="Logo" width={50} height={50} priority />
                                                 </Link>
                                             </div>
                                             <div className="text-box">
@@ -31,14 +31,14 @@ export default function Footer1() {
                                                     <h3>Begin Your Trading,</h3>
                                                 </div>
                                                 <div className="btn-box">
-                                                    <Link href="https://www.oanda.com/us-en/trading/account-comparison/"
+                                                    <Link target="_blank" href="https://portal.veloxarion.com"
                                                         className="btn-one">
                                                         <span className="txt">
                                                             New Account
                                                             <i className="icon-right-arrow"></i>
                                                         </span>
                                                     </Link>
-                                                    <Link href="https://qxbroker.com/landing/investing?lid=268729&gad_source=1"
+                                                    <Link target="_blank" href="https://portal.veloxarion.com/login"
                                                         className="btn-one">
                                                         <span className="txt">
                                                             Sign In

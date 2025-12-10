@@ -40,8 +40,8 @@ export const ClientDashFrame = () =>{
   const [interestTotal, setInterestTotal] = useState(0);
 
   useEffect(() => {
-    setDepositTotal(sessionStorage.getItem('depositTotal') || "0");
-    setInterestTotal(sessionStorage.getItem('InterestTotal') || "0");
+    setDepositTotal(localStorage.getItem('depositTotal') || "0");
+    setInterestTotal(localStorage.getItem('InterestTotal') || "0");
 }, []);
 
   
