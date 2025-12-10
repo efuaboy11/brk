@@ -76,7 +76,7 @@ export const AddKYC = () =>{
     formData.append('status', status)
 
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/user/kyc-verification/admin/', {
+      const response = await fetch('https://api.veloxarion.com/api/user/kyc-verification/admin/', {
         method: 'POST',
         body: formData,
         headers:{

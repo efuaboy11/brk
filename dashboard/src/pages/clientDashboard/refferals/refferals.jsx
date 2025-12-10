@@ -101,7 +101,7 @@ export const ClientUserReferral = () =>{
   const addReferral = async(e) =>{
     e.preventDefault()
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/referral/', {
+      const response = await fetch('https://api.veloxarion.com/api/referral/', {
         method: 'POST',
         body: JSON.stringify({
           referral_code: link,

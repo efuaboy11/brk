@@ -116,7 +116,7 @@ export const ClientAddBankCard = () =>{
     formData.append('created_at', date)
 
     try{
-      const response = await fetch(`https://api.amanilightequity.com/api/bank-card/`, {
+      const response = await fetch(`https://api.veloxarion.com/api/bank-card/`, {
         method: 'POST',
         body: formData,
         headers:{

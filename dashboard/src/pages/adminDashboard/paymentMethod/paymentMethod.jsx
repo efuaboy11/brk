@@ -99,7 +99,7 @@ export const PaymentMethod = () =>{
   const IndvividualPaymentMethod = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/payment-method/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/payment-method/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

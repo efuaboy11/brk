@@ -84,7 +84,7 @@ export const EditInvestmentPlan = () =>{
     formData.append('time_rate', timeRate)
 
     try{
-      const response = await fetch(`https://api.amanilightequity.com/api/investment-plan/${details.id}/`, {
+      const response = await fetch(`https://api.veloxarion.com/api/investment-plan/${details.id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{
@@ -131,7 +131,7 @@ export const EditInvestmentPlan = () =>{
     setDeletebtnLoader(true)
 
     try{
-      let response = await fetch(`https://api.amanilightequity.com/api/investment-plan/${details.id}/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/investment-plan/${details.id}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`

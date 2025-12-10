@@ -78,7 +78,7 @@ export const WithdrawReviewDetails = () =>{
 
   const BankCardFunction = async() =>{   
 
-    let response = await fetch(`https://api.amanilightequity.com/api/bank-card/${localStorage.getItem('paymentMethodID')}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/bank-card/${localStorage.getItem('paymentMethodID')}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -99,7 +99,7 @@ export const WithdrawReviewDetails = () =>{
   }
 
   const BankAccountFunction = async() =>{
-    let response = await fetch(`https://api.amanilightequity.com/api/bank-account/${localStorage.getItem('paymentMethodID')}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/bank-account/${localStorage.getItem('paymentMethodID')}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const WithdrawReviewDetails = () =>{
   }
 
   const WalletAddressFunction = async() =>{
-      let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${localStorage.getItem('paymentMethodID')}/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/wallet-address/${localStorage.getItem('paymentMethodID')}/`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -157,7 +157,7 @@ export const WithdrawReviewDetails = () =>{
 
 
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/withdraw/', {
+      const response = await fetch('https://api.veloxarion.com/api/withdraw/', {
         method: 'POST',
         body: formData,
         headers:{

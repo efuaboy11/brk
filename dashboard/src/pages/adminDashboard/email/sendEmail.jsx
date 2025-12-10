@@ -63,7 +63,7 @@ export const SendEmail2 = () =>{
     formData.append('body', emailMessage)
 
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/send-mail/', {
+      const response = await fetch('https://api.veloxarion.com/api/send-mail/', {
         method: 'POST',
         body: formData,
         headers:{

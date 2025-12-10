@@ -78,7 +78,7 @@ export const AddInvestment = () =>{
     formData.append('created_at', date)
 
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/user-investment/', {
+      const response = await fetch('https://api.veloxarion.com/api/user-investment/', {
         method: 'POST',
         body: formData,
         headers:{

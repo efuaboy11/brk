@@ -98,7 +98,7 @@ export const Commission = () =>{
   const UpdateCommission = async(e) =>{
     e.preventDefault()
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/commission/1/', {
+      const response = await fetch('https://api.veloxarion.com/api/commission/1/', {
         method: 'PATCH',
         body: JSON.stringify({
           name: name,

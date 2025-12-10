@@ -86,7 +86,7 @@ export const ClientBankCardWithdraw = () =>{
   const BankCardFunction = async() =>{
 
 
-      let response = await fetch(`https://api.amanilightequity.com/api/bank-card/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/bank-card/`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

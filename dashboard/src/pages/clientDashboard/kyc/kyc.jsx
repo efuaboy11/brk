@@ -75,7 +75,7 @@ export const ClientKYC = () =>{
   }
   const IndvividualPaymentMethod = async() =>{
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/payment-method/${paymentOption}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/payment-method/${paymentOption}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

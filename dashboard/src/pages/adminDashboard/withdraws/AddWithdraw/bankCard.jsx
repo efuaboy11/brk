@@ -84,7 +84,7 @@ export const BankCardWithdraw = () =>{
     if (userID){
 
 
-      let response = await fetch(`https://api.amanilightequity.com/api/bank-card/filter/?user=${userID}`, {
+      let response = await fetch(`https://api.veloxarion.com/api/bank-card/filter/?user=${userID}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

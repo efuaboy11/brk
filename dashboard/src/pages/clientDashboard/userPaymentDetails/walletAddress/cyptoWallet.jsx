@@ -120,7 +120,7 @@ export const ClientCyptoWallet = () =>{
   const IndividualCryptoWallet = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/wallet-address/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -160,7 +160,7 @@ export const ClientCyptoWallet = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${selectedDataId}/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/wallet-address/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -202,7 +202,7 @@ export const ClientCyptoWallet = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

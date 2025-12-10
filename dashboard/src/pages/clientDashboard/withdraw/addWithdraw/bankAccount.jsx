@@ -89,7 +89,7 @@ export const ClientBankAccountWithdraw = () =>{
  
   const BankAccountFunction = async() =>{
 
-      let response = await fetch(`https://api.amanilightequity.com/api/bank-account/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/bank-account/`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

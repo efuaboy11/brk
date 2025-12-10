@@ -85,7 +85,7 @@ export const AddUserAdmin = () =>{
     
 
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/users/', {
+      const response = await fetch('https://api.veloxarion.com/api/users/', {
         method: 'POST',
         body: formData,
       })

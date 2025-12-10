@@ -75,7 +75,7 @@ export const AddWithdraw = () =>{
     formData.append('created_at', date)
 
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/withdraw/', {
+      const response = await fetch('https://api.veloxarion.com/api/withdraw/', {
         method: 'POST',
         body: formData,
         headers:{

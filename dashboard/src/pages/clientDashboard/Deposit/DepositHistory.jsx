@@ -264,7 +264,7 @@ export const DepositHistory = () =>{
 
   const IndividualDeposit = async(id) =>{
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/deposits/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/deposits/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

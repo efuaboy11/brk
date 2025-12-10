@@ -79,7 +79,7 @@ export const AddInvestmentPlan = () =>{
     formData.append('time_rate', timeRate)
 
     try{
-      const response = await fetch(`https://api.amanilightequity.com/api/investment-plan/`, {
+      const response = await fetch(`https://api.veloxarion.com/api/investment-plan/`, {
         method: 'POST',
         body: formData,
         headers:{

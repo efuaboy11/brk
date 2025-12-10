@@ -71,7 +71,7 @@ export const AddPaymentMethod = () =>{
     formData.append('network', network)
 
     try{
-      const response = await fetch(`https://api.amanilightequity.com/api/payment-method/`, {
+      const response = await fetch(`https://api.veloxarion.com/api/payment-method/`, {
         method: 'POST',
         body: formData,
         headers:{

@@ -111,7 +111,7 @@ export const BankAccount = () =>{
   const IndividualBankAccount = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/bank-account/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/bank-account/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -142,7 +142,7 @@ export const BankAccount = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`https://api.amanilightequity.com/api/bank-account/${selectedDataId}/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/bank-account/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -184,7 +184,7 @@ export const BankAccount = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

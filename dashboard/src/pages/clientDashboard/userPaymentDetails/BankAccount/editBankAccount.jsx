@@ -79,7 +79,7 @@ export const ClientEditBankAccount = () =>{
     formData.append('currency', currency)
 
     try{
-      const response = await fetch(`https://api.amanilightequity.com/api/bank-account/${details.id}/`, {
+      const response = await fetch(`https://api.veloxarion.com/api/bank-account/${details.id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{

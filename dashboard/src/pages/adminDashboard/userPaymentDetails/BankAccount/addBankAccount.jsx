@@ -103,7 +103,7 @@ export const AddBankAccount = () =>{
     formData.append('created_at', date)
 
     try{
-      const response = await fetch(`https://api.amanilightequity.com/api/bank-account/`, {
+      const response = await fetch(`https://api.veloxarion.com/api/bank-account/`, {
         method: 'POST',
         body: formData,
         headers:{

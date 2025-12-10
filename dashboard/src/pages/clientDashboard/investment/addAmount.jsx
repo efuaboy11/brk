@@ -103,7 +103,7 @@ export const ClientInvestmentAddAmount = () =>{
 
   const IndvividualPlan = async(id) =>{
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/investment-plan/${localStorage.getItem('dataID')}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/investment-plan/${localStorage.getItem('dataID')}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

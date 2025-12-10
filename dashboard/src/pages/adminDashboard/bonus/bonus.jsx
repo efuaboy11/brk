@@ -91,7 +91,7 @@ export const AllBonus = () =>{
     setDisablebutton(true)
 
     try{
-      let response = await fetch(`https://api.amanilightequity.com/api/bonus/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/bonus/`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${authTokens.access}`,

@@ -74,7 +74,7 @@ export const CanceledInvestment = () =>{
 
   const InvestmentIntrest = async(user, investment_id) =>{
 
-    let response = await fetch(`https://api.amanilightequity.com/api/investment-intrest/filter/?user=${user}&investment_id=${investment_id}`, {
+    let response = await fetch(`https://api.veloxarion.com/api/investment-intrest/filter/?user=${user}&investment_id=${investment_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -102,7 +102,7 @@ export const CanceledInvestment = () =>{
   const IndividualInvestment = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/user-investment/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/user-investment/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -171,7 +171,7 @@ export const VerifiedUser = () =>{
     console.log('yes')
 
     try{
-      const response = await fetch(`https://api.amanilightequity.com/api/users/verification/${selectedDataId}/update-status/`, {
+      const response = await fetch(`https://api.veloxarion.com/api/users/verification/${selectedDataId}/update-status/`, {
         method: 'PATCH',
         body: JSON.stringify({
           status: statusValue,
@@ -217,7 +217,7 @@ export const VerifiedUser = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -243,7 +243,7 @@ export const VerifiedUser = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`https://api.amanilightequity.com/api/user/verification/${selectedDataId}/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/user/verification/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`

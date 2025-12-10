@@ -114,7 +114,7 @@ export const AddDeposit3 = () =>{
     formData.append('payment_proof', img)
 
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/deposits/', {
+      const response = await fetch('https://api.veloxarion.com/api/deposits/', {
         method: 'POST',
         body: formData,
         headers:{

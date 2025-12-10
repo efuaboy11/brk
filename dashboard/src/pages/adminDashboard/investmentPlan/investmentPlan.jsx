@@ -99,7 +99,7 @@ export const InvestmentPlan = () =>{
   const IndvividualPlan = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/investment-plan/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/investment-plan/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

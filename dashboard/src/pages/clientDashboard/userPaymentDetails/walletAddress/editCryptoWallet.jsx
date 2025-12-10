@@ -82,7 +82,7 @@ export const ClientEditCrytoWallet = () =>{
     formData.append('network', network)
 
     try{
-      const response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${details.id}/`, {
+      const response = await fetch(`https://api.veloxarion.com/api/wallet-address/${details.id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{

@@ -127,7 +127,7 @@ export const UploadVerification = () =>{
     formData.append('created_at', date)
 
     try{
-      const response = await fetch('https://api.amanilightequity.com/api/user/verification/admin/', {
+      const response = await fetch('https://api.veloxarion.com/api/user/verification/admin/', {
         method: 'POST',
         body: formData,
         headers:{

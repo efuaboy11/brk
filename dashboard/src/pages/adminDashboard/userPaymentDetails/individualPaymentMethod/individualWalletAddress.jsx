@@ -106,7 +106,7 @@ export const IndividualWallet = () =>{
   const individualCryptoWallet = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/wallet-address/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -133,7 +133,7 @@ export const IndividualWallet = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`https://api.amanilightequity.com/api/bank-card/${selectedDataId}/`, {
+      let response = await fetch(`https://api.veloxarion.com/api/bank-card/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -175,7 +175,7 @@ export const IndividualWallet = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -197,7 +197,7 @@ export const IndividualWallet = () =>{
   }
 
   const WalletAddressFunction = async() =>{
-    let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/filter/?user=${userID}`, {
+    let response = await fetch(`https://api.veloxarion.com/api/wallet-address/filter/?user=${userID}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

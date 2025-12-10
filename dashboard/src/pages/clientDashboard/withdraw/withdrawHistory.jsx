@@ -261,7 +261,7 @@ export const WithdrawHistory = () =>{
 
   const IndividualWithdraw = async(id) =>{
     setDisablebutton(true)
-    let response = await fetch(`https://api.amanilightequity.com/api/withdraw/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/withdraw/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

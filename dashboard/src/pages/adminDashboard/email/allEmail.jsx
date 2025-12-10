@@ -151,7 +151,7 @@ export const AllEmail = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`https://api.amanilightequity.com/api/users/${id}/`, {
+    let response = await fetch(`https://api.veloxarion.com/api/users/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
