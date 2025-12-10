@@ -138,7 +138,7 @@ export default function Stp_Account() {
                                                 </div>
                                                 <div className="text">
                                                     <h4>Email</h4>
-                                                    <Link href="mailto:sendyourmail@tradebro.com">sendyourmail@tradebro.com</Link>
+                                                    <Link href="mailto:sendyourmail@veloxarion.com">sendyourmail@veloxarion.com</Link>
                                                 </div>
                                             </li>
                                         </ul>

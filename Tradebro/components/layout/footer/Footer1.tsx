@@ -340,7 +340,7 @@ export default function Footer1() {
                         <div className="bottom-inner">
                             <div className="copyright-text wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="000ms">
                                 <p>
-                                    Copyrights © {new Date().getFullYear()} <Link href="/">Tradebro. </Link> All rights reserved.
+                                    Copyrights © {new Date().getFullYear()} <Link href="/">veloxarion. </Link> All rights reserved.
                                 </p>
                             </div>
                             <div className="footer-menu wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="200ms">

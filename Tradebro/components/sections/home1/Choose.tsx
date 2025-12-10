@@ -12,9 +12,9 @@ export default function Choose() {
             <div className="big-title">
                 <Marquee speed={50} direction="right" pauseOnHover className="choose-style1-scrolling-text">
                     <ul className="list marquee_mode">
-                        <li className="item">Tradebro Tradebro</li>
-                        <li className="item">Tradebro Tradebro</li>
-                        <li className="item">Tradebro Tradebro</li>
+                        <li className="item">veloxarion veloxarion</li>
+                        <li className="item">veloxarion veloxarion</li>
+                        <li className="item">veloxarion veloxarion</li>
                     </ul>
                 </Marquee>
             </div>

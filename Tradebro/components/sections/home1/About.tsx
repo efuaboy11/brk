@@ -64,7 +64,7 @@ export default function About() {
                             data-wow-duration="1500ms">
                             <div className="sec-title">
                                 <div className="sub-title">
-                                    <h4>About Tradebro</h4>
+                                    <h4>About veloxarion</h4>
                                 </div>
                                 <h2>Trusted Partner <br />in Achieving Trading Success Globally</h2>
                             </div>

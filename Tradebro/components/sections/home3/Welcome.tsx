@@ -70,9 +70,9 @@ export default function Welcome() {
                                         </span>
                                     </div>
                                     <div className="right">
-                                        <h6>Why Tradebro?</h6>
+                                        <h6>Why veloxarion?</h6>
                                         <h3>
-                                            <Link href="/index-3">Trade Better with TradeBro</Link>
+                                            <Link href="/index-3">Trade Better with veloxarion</Link>
                                         </h3>
                                     </div>
                                 </div>

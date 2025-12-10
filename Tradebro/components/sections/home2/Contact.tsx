@@ -65,14 +65,14 @@ export default function Contact() {
                         <div className=" contact-style1__big-title">
                             <Marquee speed={100} direction="up" className="contact-style1__big-title__inner marquee_mode-downToUp">
                                 <ul>
-                                    <li>Tradebro</li>
-                                    <li>Tradebro</li>
-                                    <li>Tradebro</li>
-                                    <li>Tradebro</li>
-                                    <li>Tradebro</li>
-                                    <li>Tradebro</li>
-                                    <li>Tradebro</li>
-                                    <li>Tradebro</li>
+                                    <li>veloxarion</li>
+                                    <li>veloxarion</li>
+                                    <li>veloxarion</li>
+                                    <li>veloxarion</li>
+                                    <li>veloxarion</li>
+                                    <li>veloxarion</li>
+                                    <li>veloxarion</li>
+                                    <li>veloxarion</li>
                                 </ul>
                             </Marquee>
                         </div>

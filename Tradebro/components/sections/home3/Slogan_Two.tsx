@@ -16,7 +16,7 @@ export default function Slogan_Two() {
                     <div className="slogan-style2__big-title">
                         <Marquee speed={30} direction="left" pauseOnHover className="slogan-style2-scrolling-text">
                             <ul className="list marquee_mode-rightToLeft">
-                                <li className="item">Tradebro</li>
+                                <li className="item">veloxarion</li>
                             </ul>
                         </Marquee>
                     </div>

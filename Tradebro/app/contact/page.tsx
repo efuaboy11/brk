@@ -162,7 +162,7 @@ export default function Courses_Page() {
                                                 </div>
                                                 <div className="text">
                                                     <h4>Email</h4>
-                                                    <p><Link href="mailto:sendmail@tradebro.com">sendmail@tradebro.com</Link></p>
+                                                    <p><Link href="mailto:sendmail@veloxarion.com">sendmail@veloxarion.com</Link></p>
                                                 </div>
                                             </li>
                                             <li>

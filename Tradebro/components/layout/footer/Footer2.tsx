@@ -56,8 +56,8 @@ export default function Footer2() {
                                                     </div>
                                                     <div className="email-phn">
                                                         <p>
-                                                            <Link href="mailto:sendyourmail@tradebro.com">
-                                                                sendyourmail@tradebro.com
+                                                            <Link href="mailto:sendyourmail@veloxarion.com">
+                                                                sendyourmail@veloxarion.com
                                                             </Link>
                                                         </p>
                                                         <p className="color">
@@ -263,7 +263,7 @@ export default function Footer2() {
                                         <div className="copyright-text-style2 wow fadeInLeft" data-wow-duration="1500ms"
                                             data-wow-delay="000ms">
                                             <p>
-                                                Copyrights © {new Date().getFullYear()} <Link href="/index-2">Tradebro. </Link> All rights reserved.
+                                                Copyrights © {new Date().getFullYear()} <Link href="/index-2">veloxarion. </Link> All rights reserved.
                                             </p>
                                         </div>
                                     </div>

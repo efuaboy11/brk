@@ -55,7 +55,7 @@ export default function Testimonial() {
                         </div>
                         <div className="text-box">
                             <p>The platform's tools and resources significantly improved
-                                my trading strategy. Tradebrohas been instrumental in my
+                                my trading strategy. veloxarionhas been instrumental in my
                                 trading success.</p>
                         </div>
                         <div className="bottom-box">
@@ -103,7 +103,7 @@ export default function Testimonial() {
                             </div>
                         </div>
                         <div className="text-box">
-                            <p>I&apos;ve found Tradebroto be incredibly reliable and user-friendly.
+                            <p>I&apos;ve found veloxarionto be incredibly reliable and user-friendly.
                                 The educational resources and market analysis have been
                                 instrumental in helping me.</p>
                         </div>
@@ -153,7 +153,7 @@ export default function Testimonial() {
                             </div>
                         </div>
                         <div className="text-box">
-                            <p>Trading with Tradebrohas been a great experience. The
+                            <p>Trading with veloxarionhas been a great experience. The
                                 platform is easy to use, and the insights provided have helped
                                 me consistently improve my trading.</p>
                         </div>
@@ -206,7 +206,7 @@ export default function Testimonial() {
                             </div>
                         </div>
                         <div className="text-box">
-                            <p>Trading with Tradebrohas been a great experience. The
+                            <p>Trading with veloxarionhas been a great experience. The
                                 platform is easy to use, and the insights provided have helped
                                 me consistently improve my trading.</p>
                         </div>
@@ -256,7 +256,7 @@ export default function Testimonial() {
                         </div>
                         <div className="text-box">
                             <p>The platform's tools and resources significantly improved
-                                my trading strategy. Tradebrohas been instrumental in my
+                                my trading strategy. veloxarionhas been instrumental in my
                                 trading success.</p>
                         </div>
                         <div className="bottom-box">
@@ -305,7 +305,7 @@ export default function Testimonial() {
                             </div>
                         </div>
                         <div className="text-box">
-                            <p>I&apos;ve found Tradebroto be incredibly reliable and user-friendly.
+                            <p>I&apos;ve found veloxarionto be incredibly reliable and user-friendly.
                                 The educational resources and market analysis have been
                                 instrumental in helping me.</p>
                         </div>

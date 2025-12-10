@@ -224,7 +224,7 @@ export default function Plan() {
                               <FontAwesomeIcon className='xl-text' icon={faTriangleExclamation}/>   
                             </div>                 
                             <h2>No Avaliable Plan </h2>
-                            <p className='light-text sm-text'>There is no plan avaliable at the moment. Thanks for choosing sitename</p>
+                            <p className='light-text sm-text'>There is no plan avaliable at the moment. Thanks for choosing veloxarion</p>
                           </div>
                         </div>
                       </div>

@@ -124,7 +124,7 @@ export default function Instruments() {
                                                         <h2>Trade Forex Like A Pro</h2>
                                                     </div>
                                                     <div className="text">
-                                                        <p>Join the thousands of traders that have already started turning a profit with sitename. Gain access to over 40 CFDs on the global currency pairs. Enjoy the advantage of working with fast deposits and withdrawals, as well as tight spreads. Trade on the world's most popular platform MetaTrade5.</p>
+                                                        <p>Join the thousands of traders that have already started turning a profit with veloxarion. Gain access to over 40 CFDs on the global currency pairs. Enjoy the advantage of working with fast deposits and withdrawals, as well as tight spreads. Trade on the world's most popular platform MetaTrade5.</p>
                                                     </div>
                                                     <ul className="list-item clearfix">
                                                         <li>
@@ -1104,7 +1104,7 @@ export default function Instruments() {
                                                         <h2>Crypto CFD Trading</h2>
                                                     </div>
                                                     <div className="text">
-                                                        <p>Trade on the future global currency with sitename. CFDs are available for Bitcoin, Ethereum, Litecoin, and many other cryptocurrencies. Start Trading</p>
+                                                        <p>Trade on the future global currency with veloxarion. CFDs are available for Bitcoin, Ethereum, Litecoin, and many other cryptocurrencies. Start Trading</p>
                                                     </div>
                                                     <ul className="list-item clearfix">
                                                         <li>
@@ -2094,7 +2094,7 @@ export default function Instruments() {
                                                         <h2>Trading Precious Metals</h2>
                                                     </div>
                                                     <div className="text">
-                                                        <p>Trade on Spot metals and explore new trading opportunities with sitename today!</p>
+                                                        <p>Trade on Spot metals and explore new trading opportunities with veloxarion today!</p>
                                                     </div>
                                                     <ul className="list-item clearfix">
                                                         <li>

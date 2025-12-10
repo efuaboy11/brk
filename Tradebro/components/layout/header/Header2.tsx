@@ -39,8 +39,8 @@ export default function Header2({ scroll, handleMobileMenu, handlePopup }: Heade
                                 <li>
                                     <p>
                                         [or] mail to&nbsp;
-                                        <Link href="mailto:info@tradebro.com">
-                                            info@tradebro.com
+                                        <Link href="mailto:info@veloxarion.com">
+                                            info@veloxarion.com
                                         </Link>
                                     </p>
                                 </li>

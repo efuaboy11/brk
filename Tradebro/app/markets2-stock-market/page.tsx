@@ -33,7 +33,7 @@ export default function Stock_Marketing() {
                                             <h2>Trade Stock indicies today</h2>
                                         </div>
                                         <div className="text">
-                                            <p>Stock indices represent the performance of major financial markets worldwide, making them a popular choice for traders looking to diversify their portfolios and capitalize on market trends. At sitename, we provide an innovative and seamless way to trade leading US and global indices, including the S&P 500, NASDAQ, Dow Jones, FTSE 100, DAX 40, and more.</p>
+                                            <p>Stock indices represent the performance of major financial markets worldwide, making them a popular choice for traders looking to diversify their portfolios and capitalize on market trends. At veloxarion, we provide an innovative and seamless way to trade leading US and global indices, including the S&P 500, NASDAQ, Dow Jones, FTSE 100, DAX 40, and more.</p>
                                         </div>
                                         
                                         

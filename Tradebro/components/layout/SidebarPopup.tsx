@@ -54,7 +54,7 @@ const SidebarPopup: React.FC<SidebarPopupProps> = ({ isOpen, onClose }) => {
                                     <li>
                                         <div className="inner">
                                             <div className="text">
-                                                <p><Link href="mailto:sendmail@tradebro.com">sendmail@tradebro.com</Link></p>
+                                                <p><Link href="mailto:sendmail@veloxarion.com">sendmail@veloxarion.com</Link></p>
                                             </div>
                                         </div>
                                     </li>

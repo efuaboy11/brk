@@ -50,7 +50,7 @@ export default function About_Page() {
                                 <div className="about-style2__right">
                                     <div className="sec-title withtext">
                                         <div className="sub-title">
-                                            <h4>About Tradebro</h4>
+                                            <h4>About veloxarion</h4>
                                         </div>
                                         <h2>The Famous Story</h2>
                                         <div className="text">
