@@ -60,8 +60,7 @@ export const AddDeposit3 = () =>{
     }
   };
 
-  const onSubmitForm = (data, e) =>{
-    e.preventDefault()
+  const onSubmit = (data, e) =>{
     if(img == null){
       showAlert()
       setMessage('Please upload receipt')
@@ -262,7 +261,7 @@ export const AddDeposit3 = () =>{
                       </div> 
 
 
-                      <button className="dashboard-btn width-100 pt-2 pb-3" onClick={onSubmitForm}>
+                      <button className="dashboard-btn width-100 pt-2 pb-3" onClick={onSubmit}>
                         Paid {formatName(details.name)}
                       </button>
 
