@@ -371,7 +371,7 @@ export const AdminHome = () =>{
           <section className='pb-5'>
             <div className="d-flex justify-content-between align-items-center admin-home-header">
               <div>
-                <h2 className="pb-3">Good {timeofDay}, AmanlightEquity!</h2>
+                <h2 className="pb-3">Good {timeofDay}, Veloxarion!</h2>
                 <p className="pb-1 light-text">"Dream big and dare to fail."</p>      
                 <p className="light-text">-Unknown</p> 
               </div>   
