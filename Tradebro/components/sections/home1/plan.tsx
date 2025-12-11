@@ -5,17 +5,45 @@ import { useEffect, useState } from "react";
 import {  faTriangleExclamation } from "@fortawesome/free-solid-svg-icons"
 
 export default function Plan() {
+  type InvestmentPlan = {
+    id: number;
+    plan_name: string;
+    time_rate: string;
+    percentage_return: number;
+    duration: number;
+    duration_span: string;
+    min_amount: string;
+    max_amount: string;
+  }
 
-    const [investmentPlanLoader, setInvestmentPlanLoader] = useState(true);
+  const [investmentPlanData, setInvestPlanData] = useState<InvestmentPlan[]>([])
+  const [investmentPlanLoader, setInvestmentPlanLoader] = useState(true)
+
+
+
+  const InvestmentPlanFunction = async() =>{
+    let response = await fetch('https://api.amanilightequity.com/api/investment-plan/', {
+      method: 'GET',
+      headers: {
+        "Content-Type": "application/json",
+        // Authorization: `Bearer ${authTokens.access}`
+      },
+    })
+
+    const data = await response.json()
+    if(response.ok){
+      setInvestPlanData(data)
+      setInvestmentPlanLoader(false)
+    }else{
+      setInvestmentPlanLoader(false)
+    }
+  }
+
+
+
 
   useEffect(() => {
-    // Simulate API loading
-    const timer = setTimeout(() => {
-      // load dummy data
-      setInvestmentPlanLoader(false);
-    }, 1500);
-
-    return () => clearTimeout(timer);
+    InvestmentPlanFunction()
   }, []);
 
 
@@ -39,48 +67,8 @@ export default function Plan() {
     };
 
 
-    type InvestmentPlan = {
-        id: number;
-        plan_name: string;
-        time_rate: string;
-        percentage_return: number;
-        duration: number;
-        duration_span: string;
-        min_amount: string;
-        max_amount: string;
-    }
-    const InvestmentPlanData: InvestmentPlan[] = [
-        {
-            id: 1,
-            plan_name: "starter plan",
-            time_rate: "daily",
-            percentage_return: 5,
-            duration: 7,
-            duration_span: "days",
-            min_amount: '100',
-            max_amount: '999',
-        },
-        {
-            id: 2,
-            plan_name: "silver plan",
-            time_rate: "weekly",
-            percentage_return: 12,
-            duration: 4,
-            duration_span: "weeks",
-            min_amount: '1000',
-            max_amount: '4999',
-        },
-        {
-            id: 3,
-            plan_name: "gold plan",
-            time_rate: "monthly",
-            percentage_return: 30,
-            duration: 3,
-            duration_span: "months",
-            min_amount: '5000',
-            max_amount: '10000',
-        },
-    ]
+    
+    
   return (
     <>
     <section  className="site-section-container">
@@ -97,9 +85,9 @@ export default function Plan() {
 
 
 
-              {InvestmentPlanData.length > 0 ? (
+              {investmentPlanData.length > 0 ? (
                   <div className="row g-3 pt-5 mt-3">
-                    {InvestmentPlanData.map((data) => (
+                    {investmentPlanData.map((data) => (
                       <div key={data.id} className="col-xl-4  col-lg-6">
                         <div className='home-investment-plan-boxes pt-5'>
                           <div className="">
@@ -234,7 +222,7 @@ export default function Plan() {
                   </div>
               )}
 
-              <div className="d-flex justify-content-center pt-5">
+              <div className="d-flex justify-content-center py-5">
                 <Link href='/our-packages/' className="site-inverse-btn px-5">View All</Link>
               </div>
             </div>
