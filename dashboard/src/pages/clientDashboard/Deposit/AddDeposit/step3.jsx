@@ -61,13 +61,14 @@ export const AddDeposit3 = () =>{
   };
 
   const onSubmit = (data, e) =>{
-    if(img == null){
-      showAlert()
-      setMessage('Please upload receipt')
-      setIsSuccess(false)
-    }else{
-      addDeposit(e);
+    if (!img) {
+      showAlert();
+      setMessage('Please upload receipt');
+      setIsSuccess(false);
+      return;
     }
+
+    addDeposit(data);
     
   }
 
@@ -261,7 +262,7 @@ export const AddDeposit3 = () =>{
                       </div> 
 
 
-                      <button className="dashboard-btn width-100 pt-2 pb-3" onClick={onSubmit}>
+                      <button className="dashboard-btn width-100 pt-2 pb-3" type="button" onClick={onSubmit}>
                         Paid {formatName(details.name)}
                       </button>
 
