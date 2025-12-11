@@ -61,13 +61,8 @@ export const AddDeposit3 = () =>{
   };
 
   const onSubmit = (data, e) =>{
-    setDisablebutton(true)
-    if(isValid){
-      addDeposit(e)
-      
-    }else{
-      setDisablebutton(false)
-    }
+      setDisablebutton(true);
+  addDeposit();
   }
 
   const Cancel = () =>{
