@@ -260,8 +260,8 @@ export const AddDeposit3 = () =>{
                       </div> 
 
 
-                      <div className='mx-4 pt-3'>
-                        <button className="dashboard-btn width-100 pt-2 pb-3" type="submit" disabled={disablebutton}>Paid {formatName(details.name)}</button>      
+                      <div className='mx-4 pt-3 mb-5 pb-5'>
+                        <button className="dashboard-btn width-100 pt-2 pb-3" type="submit" >Paid {formatName(details.name)}</button>      
                         <div className="d-flex justify-content-center pt-2"> 
                           <button onClick={Cancel}  className='text-center py-2 px-4 dashboard-red-btn mt-2 '>Cancel Transaction</button>  
                         </div> 
