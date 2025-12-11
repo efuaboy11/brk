@@ -100,17 +100,27 @@ export const ClientUploadKYC = () =>{
   };
 
 
-  const onSubmit = (data, e) =>{
-    addKYC(e)
-    // if(documentType != '' && country != ''  && selfieImg != null || frontimg != null|| backimg != null){
-    //   addKYC(e)
-    // }else{
-    //   showAlert()
-    //   setMessage('Please upload receipt')
-    //   setIsSuccess(false)
-    // } 
+  const onSubmit = () => {
+    setDisablebutton(true);
 
-  }
+    const valid =
+      documentType !== '' &&
+      country !== '' &&
+      selfieImg !== null &&
+      frontimg !== null &&
+      backimg !== null;
+
+    if (!valid) {
+      showAlert();
+      setMessage('Please upload all required documents');
+      setIsSuccess(false);
+      setDisablebutton(false);
+      return;
+    }
+
+    addKYC();
+  };
+
   const addKYC = async(e) =>{
     e.preventDefault()
     setProcessingText('Uploading')
@@ -285,7 +295,7 @@ export const ClientUploadKYC = () =>{
                           
                           <div className='col-12 pt-4'>
                             <div className="d-flex height-100 align-items-center">
-                              <button className="dashboard-btn py-2 px-4" onClick={onSubmit}>Upload <span className='d-none d-sm-inline-block'>Document </span></button> 
+                              <button className="dashboard-btn py-2 px-4" type="button"  onClick={onSubmit}>Upload <span className='d-none d-sm-inline-block'>Document </span></button> 
                               <Link to='/dashboard/kyc-aml/' className='Link light-link cursor-pointer'>Cancel</Link>
                             </div>
                             
