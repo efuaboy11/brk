@@ -102,7 +102,7 @@ export const ClientUploadKYC = () =>{
 
   const onSubmit = (data, e) =>{
     setDisablebutton(true)
-    if(documentType != '' && country != ''  && selfieImg == null || frontimg == null|| backimg == null){
+    if(documentType != '' && country != ''  && selfieImg != null || frontimg != null|| backimg != null){
       addKYC(e)
     }else{
       showAlert()
