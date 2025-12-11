@@ -144,7 +144,7 @@ export const Register = () => {
 
               <div className="text-center mb-4">
                 <h1 className="auth-title"><span className="primary-txt">Sign</span> Up</h1>
-                <p className="auth-subtitle">Create an account with AmaniLightEquity today</p>
+                <p className="auth-subtitle">Create an account with Veloxarion today</p>
               </div>
 
               {errorMessages && (

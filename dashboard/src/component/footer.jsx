@@ -53,7 +53,7 @@ export const Footer = () =>{
 
                   <div className="d-flex pe-5 pb-3">
                     <FontAwesomeIcon className='site-primary-text md-text me-3' icon={faEnvelope}/>
-                    <p className="light-text">support@AmanilightEquity.com</p>
+                    <p className="light-text">support@Veloxarion.com</p>
                   </div>
 
                   <div className="d-flex pe-5 pb-3">
@@ -344,9 +344,9 @@ export const Footer = () =>{
           </div>
 
           <div className='pt-5'>
-            <p className="sm-text light-text">AmanilightEquity is regulated by the International Financial Services Commission of Belize, as well as the Cyprus Securities and Exchange Commission, licensed by the Financial Services Board (FSB) of Switzerland. The company is also registered with the Financial Conduct Authority of the UK.</p>
-            <p className="sm-text-2 light-text pt-2 italic-text"><span className="font-weight-700">NOTE: </span>Trading in Forex and Contracts for Difference (CFDs), which are leveraged products, is highly speculative and involves substantial risk of loss. It is possible to lose all your capital. Therefore AmaniLightEquity is guaranteed to give you your capital when the market may go down as well as up.
-              AmaniLightEquity Limited provides it's services to global citizens. Copyright © 2025 AmaniLightEquity. All Rights Reserved. Terms and Conditions | Risk Disclosure.
+            <p className="sm-text light-text">Veloxarion is regulated by the International Financial Services Commission of Belize, as well as the Cyprus Securities and Exchange Commission, licensed by the Financial Services Board (FSB) of Switzerland. The company is also registered with the Financial Conduct Authority of the UK.</p>
+            <p className="sm-text-2 light-text pt-2 italic-text"><span className="font-weight-700">NOTE: </span>Trading in Forex and Contracts for Difference (CFDs), which are leveraged products, is highly speculative and involves substantial risk of loss. It is possible to lose all your capital. Therefore Veloxarion is guaranteed to give you your capital when the market may go down as well as up.
+              Veloxarion Limited provides it's services to global citizens. Copyright © 2025 Veloxarion. All Rights Reserved. Terms and Conditions | Risk Disclosure.
               Understand that prices displayed on the website may be affected by changes in currency exchange rate and price movements thereby affecting your investment return.
             </p>
           </div>

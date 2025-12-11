@@ -481,7 +481,7 @@ export const AuthProvider = ({children}) =>{
         setUser(null)
         localStorage.clear()
         setCaptchaToken(null)
-        setMessage("Thank you for trading with AmaniLightEquity")
+        setMessage("Thank you for trading with Veloxarion")
         
 
     }

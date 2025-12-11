@@ -80,7 +80,7 @@ export const ChangePassowrd3 = () =>{
 
                     <div className="col-12 text-center">
                       <h1>SUCCESSFUL</h1>
-                      <p>Your password has been updated. <br /> Thank you for choosing for AmanilightEquity </p>
+                      <p>Your password has been updated. <br /> Thank you for choosing for Veloxarion </p>
                       <p className='mt-4 mb-2'><Link to="/admin/change-password/step-1/" className="py-2 px-3  dashboard-btn"><i class="pe-1 bi bi-arrow-left"></i> Back</Link></p>
                     </div>
                 </div>

@@ -274,7 +274,7 @@ export const ClientUploadKYC = () =>{
                                   <i class="bi bi-check2-circle sm-text"></i>
                                 </div>
                                 <div className="col-10">
-                                  <p>This information is use for Intermediate Verification only, and is kept private and confidential by AmaniLightEquity</p>
+                                  <p>This information is use for Intermediate Verification only, and is kept private and confidential by Veloxarion</p>
                                 </div>
                               </div>
                             </div>

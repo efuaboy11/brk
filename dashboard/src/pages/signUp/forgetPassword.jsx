@@ -75,7 +75,7 @@ export const ForgotPasssword = () => {
                   <span className="primary-txt">Forgot</span> Your Password
                 </h1>
                 <p className="auth-subtitle">
-                  Please enter the email you use to sign in to <span className="font-bold">AmaniLightEquity</span>.
+                  Please enter the email you use to sign in to <span className="font-bold">Veloxarion</span>.
                   You will receive an <span className="font-bold">OTP</span> to reset your password.
                 </p>
               </div>

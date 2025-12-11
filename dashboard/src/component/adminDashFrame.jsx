@@ -904,7 +904,7 @@ export const AdminDashFrame = () =>{
                 <div className="dashboard-content-user-link cursor-pointer">
                   <div className="d-flex dashboard-content-user-link-hover" onClick={toggleNavDropdown}>
                     <img src={userIcon} width='35px' alt="" />
-                    <p className='px-2 pt-1'>AmanilightEquity</p>
+                    <p className='px-2 pt-1'>Veloxarion</p>
                     <p className='pt-1'><FontAwesomeIcon className='xsm-text' icon={faAngleDown}/></p>
                   </div>
                   {navDropdown &&

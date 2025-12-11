@@ -290,7 +290,7 @@ export const ClientInvestmentPlan = () =>{
                                 <FontAwesomeIcon className='xl-text' icon={faTriangleExclamation}/>   
                               </div>                 
                               <h2>No Avaliable Plan </h2>
-                              <p className='light-text sm-text'>There is no plan avaliable at the moment. Thanks for choosing AmaniLightEquity</p>
+                              <p className='light-text sm-text'>There is no plan avaliable at the moment. Thanks for choosing Veloxarion</p>
                             </div>
                           </div>
                         </div>

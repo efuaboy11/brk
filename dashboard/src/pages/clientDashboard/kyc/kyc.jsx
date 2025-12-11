@@ -151,7 +151,7 @@ export const ClientKYC = () =>{
                         <p className='dashboard-header'>KYC Verification Accepted</p>
                       </div>
                       <div>
-                        <p className='sm-text text-center light-text' >Your KYC has been reviwed and accepted. Thanks for choosing AmaniLightEquity </p>
+                        <p className='sm-text text-center light-text' >Your KYC has been reviwed and accepted. Thanks for choosing Veloxarion </p>
                       </div>
 
                       <div className='pt-5 pb-4'>

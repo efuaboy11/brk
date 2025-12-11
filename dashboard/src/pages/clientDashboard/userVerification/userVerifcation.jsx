@@ -117,7 +117,7 @@ export const ClientUserVerification = () =>{
                         <p className='dashboard-header'>User Verification Accepted</p>
                       </div>
                       <div>
-                        <p className='sm-text text-center light-text' >Your details has been reviwed and accepted. Thanks for choosing AmaniLightEquity </p>
+                        <p className='sm-text text-center light-text' >Your details has been reviwed and accepted. Thanks for choosing Veloxarion </p>
                       </div>
 
                       <div className='pt-5 pb-4'>

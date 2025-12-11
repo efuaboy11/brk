@@ -37,7 +37,7 @@ export const AddDeposit4 = () =>{
           <div className='text-center col-11 col-sm-10 col-md-8 col-xxl-6 pt-5'>
             <img src={pic} alt="" width='150px'/>
             <p className="dashboard-header">Successful</p>
-            <p className='light-text pb-3'>Your deposit has been received. We will review the details you provided, and your account will be funded upon verification of authenticity. Thank you for investing with AmaniLightEquity! </p>
+            <p className='light-text pb-3'>Your deposit has been received. We will review the details you provided, and your account will be funded upon verification of authenticity. Thank you for investing with Veloxarion! </p>
             <Link to='/dashboard/home/' className="Link">
               <p className='dashboard-btn width-100 pt-2 pb-3'><i class="bi bi-house-door-fill pe-2"></i>Home</p>   
             </Link>  
