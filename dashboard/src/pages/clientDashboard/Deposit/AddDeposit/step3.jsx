@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBan, faChartLine, faCircleDollarToSlot, faCreditCard,  faHandHoldingDollar, faMailBulk, faMoneyBillTransfer} from "@fortawesome/free-solid-svg-icons"
+import {faBan, faChartLine, faCircleDollarToSlot, faCreditCard,  faHandHoldingDollar, faL, faMailBulk, faMoneyBillTransfer} from "@fortawesome/free-solid-svg-icons"
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useContext, useEffect} from "react";
 import AuthContext from "../../../../context/AuthContext";
@@ -47,7 +47,7 @@ export const AddDeposit3 = () =>{
   const navigate  = useNavigate()
   const [details, setDetails] = useState(null)
   const [amount, setAmount] = useState('')
-  const [img, setImg] = useState("")
+  const [img, setImg] = useState(null)
   const [processingText, setProcessingText] = useState('Processing')
 
 
@@ -61,8 +61,14 @@ export const AddDeposit3 = () =>{
   };
 
   const onSubmit = (data, e) =>{
-      setDisablebutton(true);
-  addDeposit();
+    if(img == null){
+      showAlert()
+      setMessage('Please upload receipt')
+      setIsSuccess(false)
+    }else{
+      addDeposit();
+    }
+    
   }
 
   const Cancel = () =>{

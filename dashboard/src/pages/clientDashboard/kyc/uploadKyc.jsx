@@ -194,7 +194,7 @@ export const ClientUploadKYC = () =>{
                   </div>
                   <div className="dashboard-boxes mt-4 p-4 border-radius-5px">
                     <div>
-                      <form  onSubmit={handleSubmit(onSubmit)}>
+                      <form>
                         <div className='row g-3'>
                           <div className="col-12">
                             <label htmlFor="" className="p-2">Country of Issuance</label>
@@ -284,7 +284,7 @@ export const ClientUploadKYC = () =>{
                             <div className="d-flex height-100 align-items-center">
                               <div className='pe-4'>
 
-                                <button className="dashboard-btn py-2 px-4" type="submit" disabled={disablebutton}>Upload <span className='d-none d-sm-inline-block'>Document </span></button> 
+                                <button className="dashboard-btn py-2 px-4" onClick={onSubmit}>Upload <span className='d-none d-sm-inline-block'>Document </span></button> 
                               </div>
                               <Link to='/dashboard/kyc-aml/' className='Link light-link cursor-pointer'>Cancel</Link>
                             </div>
