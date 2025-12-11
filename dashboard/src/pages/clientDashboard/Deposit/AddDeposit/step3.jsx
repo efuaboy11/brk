@@ -61,6 +61,7 @@ export const AddDeposit3 = () =>{
   };
 
   const onSubmitForm = (data, e) =>{
+    e.preventDefault()
     if(img == null){
       showAlert()
       setMessage('Please upload receipt')
