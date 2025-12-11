@@ -238,7 +238,7 @@ export const AddDeposit3 = () =>{
 
 
                   <div className="py-2">
-                    <form  onSubmit={handleSubmit(onSubmit)}>
+                    <form>
                       <div className="row g-3">
                         <div className="col-12">
                           <label htmlFor="" className="p-2 ">Upload Payment Proof</label>
@@ -254,15 +254,15 @@ export const AddDeposit3 = () =>{
                       </div> 
 
 
-                      <button className="dashboard-btn width-100 pt-2 pb-3" type="submit">
-    Paid {formatName(details.name)}
-  </button>
+                      <button className="dashboard-btn width-100 pt-2 pb-3" onClick={onSubmit}>
+                        Paid {formatName(details.name)}
+                      </button>
 
-  <div className="d-flex justify-content-center pt-2">
-    <button type="button" onClick={Cancel} className="text-center py-2 px-4 dashboard-red-btn mt-2">
-      Cancel Transaction
-    </button>
-  </div>
+                        <div className="d-flex justify-content-center pt-2">
+                          <button type="button" onClick={Cancel} className="text-center py-2 px-4 dashboard-red-btn mt-2">
+                            Cancel Transaction
+                          </button>
+                        </div>
                     </form> 
                   </div>          
 
