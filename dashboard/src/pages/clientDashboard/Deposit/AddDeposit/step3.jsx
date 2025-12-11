@@ -104,6 +104,7 @@ export const AddDeposit3 = () =>{
   }, [])
 
   const addDeposit = async(e) =>{
+    e.preventDefault()
     setProcessingText('Finalizing Deposit')
     setLoader(true)
 
