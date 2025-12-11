@@ -246,7 +246,7 @@ export const AddDeposit3 = () =>{
 
 
                   <div className="py-2">
-                    <div>
+                    <form>
                       <div className="row g-3">
                         <div className="col-12">
                           <label htmlFor="" className="p-2 ">Upload Payment Proof</label>
@@ -271,7 +271,7 @@ export const AddDeposit3 = () =>{
                             Cancel Transaction
                           </button>
                         </div>
-                    </div> 
+                    </form> 
                   </div>          
 
 

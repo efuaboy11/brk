@@ -198,7 +198,7 @@ export const ClientUploadKYC = () =>{
                   </div>
                   <div className="dashboard-boxes mt-4 p-4 border-radius-5px">
                     <div>
-                      <div>
+                      <form>
                         <div className='row g-3'>
                           <div className="col-12">
                             <label htmlFor="" className="p-2">Country of Issuance</label>
@@ -292,7 +292,7 @@ export const ClientUploadKYC = () =>{
                             
                           </div>
                         </div>
-                      </div>
+                      </form>
                     </div>
 
                   </div>
