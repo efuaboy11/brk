@@ -121,8 +121,7 @@ export const ClientUploadKYC = () =>{
     addKYC();
   };
 
-  const addKYC = async(e) =>{
-    e.preventDefault()
+  const addKYC = async() =>{
     setProcessingText('Uploading')
     setLoader(true)
 
