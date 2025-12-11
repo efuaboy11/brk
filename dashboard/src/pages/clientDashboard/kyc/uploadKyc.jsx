@@ -48,9 +48,9 @@ export const ClientUploadKYC = () =>{
   const [documentType, setDocumentType] = useState('')
   const [country, setCountry] = useState('')
   const [status, setStatus] = useState('')
-  const [selfieImg, setselfieImg] = useState("")
-  const [frontimg, setFrontImg] = useState("")
-  const [backimg, setBackImg] = useState("")
+  const [selfieImg, setselfieImg] = useState(null)
+  const [frontimg, setFrontImg] = useState(null)
+  const [backimg, setBackImg] = useState(null)
   const [loader, setLoader] = useState(false)
   const [processingText, setProcessingText] = useState('Processing')
 
@@ -102,7 +102,7 @@ export const ClientUploadKYC = () =>{
 
   const onSubmit = (data, e) =>{
     setDisablebutton(true)
-    if(documentType || country || selfieImg || frontimg || backimg){
+    if(documentType != '' && country != ''  && selfieImg == null || frontimg == null|| backimg == null){
       addKYC(e)
     }else{
       showAlert()
