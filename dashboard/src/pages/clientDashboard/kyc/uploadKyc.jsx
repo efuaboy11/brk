@@ -101,15 +101,14 @@ export const ClientUploadKYC = () =>{
 
 
   const onSubmit = (data, e) =>{
-    e.preventDefault()
-    setDisablebutton(true)
-    if(documentType != '' && country != ''  && selfieImg != null || frontimg != null|| backimg != null){
-      addKYC(e)
-    }else{
-      showAlert()
-      setMessage('Please upload receipt')
-      setIsSuccess(false)
-    } 
+    addKYC(e)
+    // if(documentType != '' && country != ''  && selfieImg != null || frontimg != null|| backimg != null){
+    //   addKYC(e)
+    // }else{
+    //   showAlert()
+    //   setMessage('Please upload receipt')
+    //   setIsSuccess(false)
+    // } 
 
   }
   const addKYC = async(e) =>{
