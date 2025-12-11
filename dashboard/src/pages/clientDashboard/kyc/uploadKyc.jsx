@@ -286,10 +286,7 @@ export const ClientUploadKYC = () =>{
                           
                           <div className='col-12 pt-4'>
                             <div className="d-flex height-100 align-items-center">
-                              <div className='pe-4'>
-
-                                <button className="dashboard-btn py-2 px-4" onClick={onSubmit}>Upload <span className='d-none d-sm-inline-block'>Document </span></button> 
-                              </div>
+                              <button className="dashboard-btn py-2 px-4" onClick={onSubmit}>Upload <span className='d-none d-sm-inline-block'>Document </span></button> 
                               <Link to='/dashboard/kyc-aml/' className='Link light-link cursor-pointer'>Cancel</Link>
                             </div>
                             
